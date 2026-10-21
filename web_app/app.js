@@ -42,11 +42,11 @@ const WATCHFACE_CATALOG = [
     id: 'roman_analog',
     faceId: 14698,
     title: 'Minimalist Roman Analog',
-    subtitle: 'Angka Romawi Klasik • Jarum Halus',
+    subtitle: 'Classic 2-Hand Haute Horlogerie • Ultra Responsif',
     file: 'watchfaces/roman_analog.bin',
     preview: 'previews/roman_analog.png',
-    badge: 'Elegan',
-    desc: 'Tampilan jam jarum analog dengan angka Romawi klasik kontras tinggi, jarum detik merah halus, dan kalender tanggal.'
+    badge: 'Super Responsif',
+    desc: 'Desain dress watch klasik 2-jarum (Hour & Minute) ultra-ringan tanpa lag. Layar bangun instan 0 detik, transisi menu 60fps super mulus, dan hemat baterai drastis.'
   },
   {
     id: 'lonely_moon',

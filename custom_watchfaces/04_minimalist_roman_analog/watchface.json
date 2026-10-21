@@ -255,88 +255,45 @@
       "e_type": 10,
       "name": "time_hand",
       "size": 19,
-      "raw_hex": "010a00e00067000000000012009c00ffffffff",
+      "raw_hex": "010a00e10067000000000010009c00ffffffff",
       "owhs": [
         {
           "rel_offset": 7,
           "offset": 0,
-          "w": 18,
+          "w": 16,
           "h": 156,
           "image": {
             "file": "images/elem_03_time_hand_00.png",
-            "w": 18,
+            "w": 16,
             "h": 156
           }
         }
       ],
       "hand_type": 0,
-      "pivot_x": 224,
+      "pivot_x": 225,
       "pivot_y": 103
     },
     {
       "e_type": 10,
       "name": "time_hand",
       "size": 19,
-      "raw_hex": "010a01e2002b00000000000e00de00ffffffff",
+      "raw_hex": "010a01e2002900000000000e00e000ffffffff",
       "owhs": [
         {
           "rel_offset": 7,
           "offset": 0,
           "w": 14,
-          "h": 222,
+          "h": 224,
           "image": {
             "file": "images/elem_04_time_hand_00.png",
             "w": 14,
-            "h": 222
+            "h": 224
           }
         }
       ],
       "hand_type": 1,
       "pivot_x": 226,
-      "pivot_y": 43
-    },
-    {
-      "e_type": 10,
-      "name": "time_hand",
-      "size": 19,
-      "raw_hex": "010a02e50012000000000008000e01ffffffff",
-      "owhs": [
-        {
-          "rel_offset": 7,
-          "offset": 0,
-          "w": 8,
-          "h": 270,
-          "image": {
-            "file": "images/elem_05_time_hand_00.png",
-            "w": 8,
-            "h": 270
-          }
-        }
-      ],
-      "hand_type": 2,
-      "pivot_x": 229,
-      "pivot_y": 18
-    },
-    {
-      "e_type": 0,
-      "name": "image",
-      "size": 14,
-      "raw_hex": "0100de00de000000000016001600",
-      "owhs": [
-        {
-          "rel_offset": 6,
-          "offset": 0,
-          "w": 22,
-          "h": 22,
-          "image": {
-            "file": "images/elem_06_image_00.png",
-            "w": 22,
-            "h": 22
-          }
-        }
-      ],
-      "x": 222,
-      "y": 222
+      "pivot_y": 41
     }
   ]
 }
