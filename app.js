@@ -239,32 +239,20 @@ function checkBluetoothSupport() {
   return true;
 }
 
-// Connect to Watch via Web Bluetooth
-async function connectBluetooth(scanAll = false) {
+// Connect to Watch via Web Bluetooth (Strictly locked to B71)
+async function connectBluetooth() {
   if (!checkBluetoothSupport()) return;
-
-  const chkScanAll = document.getElementById('chkScanAll');
-  const shouldScanAll = scanAll || (chkScanAll && chkScanAll.checked);
 
   try {
     deviceStatusEl.textContent = 'Mencari jam Bozlun B71...';
-    showToast(shouldScanAll ? 'Mencari semua perangkat Bluetooth...' : 'Mencari Bozlun B71...', 'info');
+    showToast('Mencari jam Bozlun B71...', 'info');
 
-    const options = shouldScanAll ? {
-      acceptAllDevices: true,
-      optionalServices: [
-        UUID_SERVICE_FEE1,
-        '0000fee7-0000-1000-8000-00805f9b34fb',
-        UUID_BATTERY_SVC
-      ]
-    } : {
+    const options = {
       filters: [
+        { name: 'B71' },
         { namePrefix: 'B71' },
-        { namePrefix: 'b71' },
-        { namePrefix: 'MOY' },
-        { namePrefix: 'Moy' },
-        { namePrefix: 'moy' },
-        { services: [UUID_SERVICE_FEE1] }
+        { name: 'b71' },
+        { namePrefix: 'b71' }
       ],
       optionalServices: [
         UUID_SERVICE_FEE1,
@@ -326,7 +314,7 @@ async function connectBluetooth(scanAll = false) {
   } catch (err) {
     console.error('Bluetooth connection error:', err);
     if (err.name === 'NotFoundError') {
-      showToast('Pencarian dibatalkan atau jam tidak terlihat. Centang "Scan Semua Perangkat".', 'warning');
+      showToast('Pencarian dibatalkan atau jam B71 tidak terdeteksi. Pastikan Da Fit ditutup & GPS aktif!', 'warning');
     } else {
       showToast(`${err.message}`, 'error');
     }

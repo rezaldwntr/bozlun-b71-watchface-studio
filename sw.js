@@ -1,4 +1,4 @@
-const CACHE_NAME = 'b71-flasher-v3';
+const CACHE_NAME = 'b71-flasher-v4';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',

@@ -12,7 +12,7 @@
   <link rel="manifest" href="manifest.json">
   <link rel="icon" type="image/png" href="icons/favicon.png">
   <link rel="apple-touch-icon" href="icons/icon-192.png">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 
@@ -58,25 +58,19 @@
       </div>
     </section>
 
-    <!-- Scan Option & Troubleshooting Help -->
-    <div style="margin-top: -14px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; font-size: 0.8rem; color: var(--text-secondary);">
-      <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
-        <input type="checkbox" id="chkScanAll" style="accent-color: var(--accent-cyan); width: 16px; height: 16px;">
-        <span>Cari semua perangkat Bluetooth (tanpa filter nama)</span>
-      </label>
-    </div>
-
     <!-- Troubleshooting Tips Box -->
-    <div class="notice-box" style="margin-top: 0; margin-bottom: 20px; border-color: rgba(255, 145, 0, 0.3); background: rgba(255, 145, 0, 0.05);">
-      <div class="notice-icon" style="color: var(--accent-orange);">
-        <svg class="icon" style="width: 22px; height: 22px;" viewBox="0 0 24 24"><path fill="currentColor" d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+    <div class="notice-box" style="margin-top: -10px; margin-bottom: 20px; border-color: rgba(0, 229, 255, 0.25); background: rgba(0, 229, 255, 0.04);">
+      <div class="notice-icon" style="color: var(--accent-cyan);">
+        <svg class="icon" style="width: 22px; height: 22px;" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
       </div>
       <div>
-        <strong style="color: #ffb74d;">Jika Gagal Menghubungkan ke Jam:</strong>
-        <ol style="margin-top: 6px; padding-left: 18px; line-height: 1.5;">
-          <li><strong>Tutup aplikasi Da Fit di HP</strong>: Jam tangan BLE hanya bisa terhubung ke 1 aplikasi. Jika Da Fit aktif di latar belakang, Da Fit mengunci koneksi dan browser akan ditolak. Tutup/keluarkan Da Fit terlebih dahulu.</li>
-          <li><strong>Nyalakan GPS / Izin Lokasi</strong>: Sistem Android mewajibkan GPS/Lokasi aktif untuk memindai perangkat Bluetooth Low Energy.</li>
-          <li><strong>Centang "Cari semua perangkat"</strong> di atas jika nama <em>B71</em> tidak muncul di daftar pencarian Chrome.</li>
+        <strong style="color: var(--accent-cyan);">Pencarian Bluetooth Dikunci Khusus ke "B71":</strong>
+        <p style="margin-top: 4px; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+          Hanya jam tangan <strong>B71</strong> yang akan muncul di daftar. Jika daftar kosong:
+        </p>
+        <ol style="margin-top: 4px; padding-left: 18px; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+          <li><strong>Tutup aplikasi Da Fit di HP</strong>: Jam tangan BLE hanya bisa terhubung ke 1 aplikasi. Jika Da Fit aktif di latar belakang, Da Fit mengunci koneksi sehingga jam tidak terlihat.</li>
+          <li><strong>Nyalakan GPS / Izin Lokasi</strong>: Sistem Android mewajibkan GPS/Lokasi aktif agar browser diizinkan memindai Bluetooth Low Energy.</li>
         </ol>
       </div>
     </div>
@@ -142,6 +136,6 @@
   <!-- Toast -->
   <div class="toast" id="toast">Notifikasi</div>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=4"></script>
 </body>
 </html>
