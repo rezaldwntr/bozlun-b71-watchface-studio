@@ -1,0 +1,928 @@
+{
+  "format": "watchface_bin",
+  "file_size": 0,
+  "api_ver": 35,
+  "unknown": 65535,
+  "preview": {
+    "offset": 0,
+    "w": 280,
+    "h": 280,
+    "image": {
+      "file": "images/preview.png",
+      "w": 280,
+      "h": 280
+    }
+  },
+  "d_offset": 16,
+  "e_offset": 350,
+  "digit_sets": [
+    {
+      "digit_set_id": 0,
+      "unknown": 257,
+      "glyphs": [
+        {
+          "offset": 0,
+          "w": 52,
+          "h": 68,
+          "image": {
+            "file": "images/digits_00_0.png",
+            "w": 52,
+            "h": 68
+          }
+        },
+        {
+          "offset": 0,
+          "w": 52,
+          "h": 68,
+          "image": {
+            "file": "images/digits_00_1.png",
+            "w": 52,
+            "h": 68
+          }
+        },
+        {
+          "offset": 0,
+          "w": 52,
+          "h": 68,
+          "image": {
+            "file": "images/digits_00_2.png",
+            "w": 52,
+            "h": 68
+          }
+        },
+        {
+          "offset": 0,
+          "w": 52,
+          "h": 68,
+          "image": {
+            "file": "images/digits_00_3.png",
+            "w": 52,
+            "h": 68
+          }
+        },
+        {
+          "offset": 0,
+          "w": 52,
+          "h": 68,
+          "image": {
+            "file": "images/digits_00_4.png",
+            "w": 52,
+            "h": 68
+          }
+        },
+        {
+          "offset": 0,
+          "w": 52,
+          "h": 68,
+          "image": {
+            "file": "images/digits_00_5.png",
+            "w": 52,
+            "h": 68
+          }
+        },
+        {
+          "offset": 0,
+          "w": 52,
+          "h": 68,
+          "image": {
+            "file": "images/digits_00_6.png",
+            "w": 52,
+            "h": 68
+          }
+        },
+        {
+          "offset": 0,
+          "w": 52,
+          "h": 68,
+          "image": {
+            "file": "images/digits_00_7.png",
+            "w": 52,
+            "h": 68
+          }
+        },
+        {
+          "offset": 0,
+          "w": 52,
+          "h": 68,
+          "image": {
+            "file": "images/digits_00_8.png",
+            "w": 52,
+            "h": 68
+          }
+        },
+        {
+          "offset": 0,
+          "w": 52,
+          "h": 68,
+          "image": {
+            "file": "images/digits_00_9.png",
+            "w": 52,
+            "h": 68
+          }
+        }
+      ]
+    },
+    {
+      "digit_set_id": 1,
+      "unknown": 257,
+      "glyphs": [
+        {
+          "offset": 0,
+          "w": 52,
+          "h": 68,
+          "image": {
+            "file": "images/digits_01_0.png",
+            "w": 52,
+            "h": 68
+          }
+        },
+        {
+          "offset": 0,
+          "w": 52,
+          "h": 68,
+          "image": {
+            "file": "images/digits_01_1.png",
+            "w": 52,
+            "h": 68
+          }
+        },
+        {
+          "offset": 0,
+          "w": 52,
+          "h": 68,
+          "image": {
+            "file": "images/digits_01_2.png",
+            "w": 52,
+            "h": 68
+          }
+        },
+        {
+          "offset": 0,
+          "w": 52,
+          "h": 68,
+          "image": {
+            "file": "images/digits_01_3.png",
+            "w": 52,
+            "h": 68
+          }
+        },
+        {
+          "offset": 0,
+          "w": 52,
+          "h": 68,
+          "image": {
+            "file": "images/digits_01_4.png",
+            "w": 52,
+            "h": 68
+          }
+        },
+        {
+          "offset": 0,
+          "w": 52,
+          "h": 68,
+          "image": {
+            "file": "images/digits_01_5.png",
+            "w": 52,
+            "h": 68
+          }
+        },
+        {
+          "offset": 0,
+          "w": 52,
+          "h": 68,
+          "image": {
+            "file": "images/digits_01_6.png",
+            "w": 52,
+            "h": 68
+          }
+        },
+        {
+          "offset": 0,
+          "w": 52,
+          "h": 68,
+          "image": {
+            "file": "images/digits_01_7.png",
+            "w": 52,
+            "h": 68
+          }
+        },
+        {
+          "offset": 0,
+          "w": 52,
+          "h": 68,
+          "image": {
+            "file": "images/digits_01_8.png",
+            "w": 52,
+            "h": 68
+          }
+        },
+        {
+          "offset": 0,
+          "w": 52,
+          "h": 68,
+          "image": {
+            "file": "images/digits_01_9.png",
+            "w": 52,
+            "h": 68
+          }
+        }
+      ]
+    },
+    {
+      "digit_set_id": 2,
+      "unknown": 257,
+      "glyphs": [
+        {
+          "offset": 0,
+          "w": 15,
+          "h": 18,
+          "image": {
+            "file": "images/digits_02_0.png",
+            "w": 15,
+            "h": 18
+          }
+        },
+        {
+          "offset": 0,
+          "w": 15,
+          "h": 18,
+          "image": {
+            "file": "images/digits_02_1.png",
+            "w": 15,
+            "h": 18
+          }
+        },
+        {
+          "offset": 0,
+          "w": 15,
+          "h": 18,
+          "image": {
+            "file": "images/digits_02_2.png",
+            "w": 15,
+            "h": 18
+          }
+        },
+        {
+          "offset": 0,
+          "w": 15,
+          "h": 18,
+          "image": {
+            "file": "images/digits_02_3.png",
+            "w": 15,
+            "h": 18
+          }
+        },
+        {
+          "offset": 0,
+          "w": 15,
+          "h": 18,
+          "image": {
+            "file": "images/digits_02_4.png",
+            "w": 15,
+            "h": 18
+          }
+        },
+        {
+          "offset": 0,
+          "w": 15,
+          "h": 18,
+          "image": {
+            "file": "images/digits_02_5.png",
+            "w": 15,
+            "h": 18
+          }
+        },
+        {
+          "offset": 0,
+          "w": 15,
+          "h": 18,
+          "image": {
+            "file": "images/digits_02_6.png",
+            "w": 15,
+            "h": 18
+          }
+        },
+        {
+          "offset": 0,
+          "w": 15,
+          "h": 18,
+          "image": {
+            "file": "images/digits_02_7.png",
+            "w": 15,
+            "h": 18
+          }
+        },
+        {
+          "offset": 0,
+          "w": 15,
+          "h": 18,
+          "image": {
+            "file": "images/digits_02_8.png",
+            "w": 15,
+            "h": 18
+          }
+        },
+        {
+          "offset": 0,
+          "w": 15,
+          "h": 18,
+          "image": {
+            "file": "images/digits_02_9.png",
+            "w": 15,
+            "h": 18
+          }
+        }
+      ]
+    },
+    {
+      "digit_set_id": 3,
+      "unknown": 257,
+      "glyphs": [
+        {
+          "offset": 0,
+          "w": 16,
+          "h": 19,
+          "image": {
+            "file": "images/digits_03_0.png",
+            "w": 16,
+            "h": 19
+          }
+        },
+        {
+          "offset": 0,
+          "w": 16,
+          "h": 19,
+          "image": {
+            "file": "images/digits_03_1.png",
+            "w": 16,
+            "h": 19
+          }
+        },
+        {
+          "offset": 0,
+          "w": 16,
+          "h": 19,
+          "image": {
+            "file": "images/digits_03_2.png",
+            "w": 16,
+            "h": 19
+          }
+        },
+        {
+          "offset": 0,
+          "w": 16,
+          "h": 19,
+          "image": {
+            "file": "images/digits_03_3.png",
+            "w": 16,
+            "h": 19
+          }
+        },
+        {
+          "offset": 0,
+          "w": 16,
+          "h": 19,
+          "image": {
+            "file": "images/digits_03_4.png",
+            "w": 16,
+            "h": 19
+          }
+        },
+        {
+          "offset": 0,
+          "w": 16,
+          "h": 19,
+          "image": {
+            "file": "images/digits_03_5.png",
+            "w": 16,
+            "h": 19
+          }
+        },
+        {
+          "offset": 0,
+          "w": 16,
+          "h": 19,
+          "image": {
+            "file": "images/digits_03_6.png",
+            "w": 16,
+            "h": 19
+          }
+        },
+        {
+          "offset": 0,
+          "w": 16,
+          "h": 19,
+          "image": {
+            "file": "images/digits_03_7.png",
+            "w": 16,
+            "h": 19
+          }
+        },
+        {
+          "offset": 0,
+          "w": 16,
+          "h": 19,
+          "image": {
+            "file": "images/digits_03_8.png",
+            "w": 16,
+            "h": 19
+          }
+        },
+        {
+          "offset": 0,
+          "w": 16,
+          "h": 19,
+          "image": {
+            "file": "images/digits_03_9.png",
+            "w": 16,
+            "h": 19
+          }
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "e_type": 0,
+      "name": "image",
+      "size": 14,
+      "raw_hex": "01000000000000000000d201d201",
+      "owhs": [
+        {
+          "rel_offset": 6,
+          "offset": 0,
+          "w": 466,
+          "h": 466,
+          "image": {
+            "file": "images/elem_00_image_00.png",
+            "w": 466,
+            "h": 466
+          }
+        }
+      ],
+      "x": 0,
+      "y": 0
+    },
+    {
+      "e_type": 2,
+      "name": "time_num",
+      "size": 34,
+      "raw_hex": "0102000001019b007d00dc007d009b00e600dc00e600000000000000000000000000",
+      "owhs": [],
+      "digit_sets": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "coords": [
+        {
+          "x": 155,
+          "y": 125
+        },
+        {
+          "x": 220,
+          "y": 125
+        },
+        {
+          "x": 155,
+          "y": 230
+        },
+        {
+          "x": 220,
+          "y": 230
+        }
+      ]
+    },
+    {
+      "e_type": 4,
+      "name": "day_name",
+      "size": 63,
+      "raw_hex": "0104019b0058000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "owhs": [
+        {
+          "rel_offset": 7,
+          "offset": 0,
+          "w": 50,
+          "h": 18,
+          "image": {
+            "file": "images/elem_02_day_name_00.png",
+            "w": 50,
+            "h": 18
+          }
+        },
+        {
+          "rel_offset": 15,
+          "offset": 0,
+          "w": 50,
+          "h": 18,
+          "image": {
+            "file": "images/elem_02_day_name_01.png",
+            "w": 50,
+            "h": 18
+          }
+        },
+        {
+          "rel_offset": 23,
+          "offset": 0,
+          "w": 50,
+          "h": 18,
+          "image": {
+            "file": "images/elem_02_day_name_02.png",
+            "w": 50,
+            "h": 18
+          }
+        },
+        {
+          "rel_offset": 31,
+          "offset": 0,
+          "w": 50,
+          "h": 18,
+          "image": {
+            "file": "images/elem_02_day_name_03.png",
+            "w": 50,
+            "h": 18
+          }
+        },
+        {
+          "rel_offset": 39,
+          "offset": 0,
+          "w": 50,
+          "h": 18,
+          "image": {
+            "file": "images/elem_02_day_name_04.png",
+            "w": 50,
+            "h": 18
+          }
+        },
+        {
+          "rel_offset": 47,
+          "offset": 0,
+          "w": 50,
+          "h": 18,
+          "image": {
+            "file": "images/elem_02_day_name_05.png",
+            "w": 50,
+            "h": 18
+          }
+        },
+        {
+          "rel_offset": 55,
+          "offset": 0,
+          "w": 50,
+          "h": 18,
+          "image": {
+            "file": "images/elem_02_day_name_06.png",
+            "w": 50,
+            "h": 18
+          }
+        }
+      ],
+      "x": 155,
+      "y": 88
+    },
+    {
+      "e_type": 13,
+      "name": "day_num",
+      "size": 12,
+      "raw_hex": "010d0202de005800ea005800",
+      "owhs": [],
+      "digit_set": 2,
+      "align": 2,
+      "coords": [
+        {
+          "x": 222,
+          "y": 88
+        },
+        {
+          "x": 234,
+          "y": 88
+        }
+      ]
+    },
+    {
+      "e_type": 15,
+      "name": "month_num",
+      "size": 12,
+      "raw_hex": "010f0202fe0058000a015800",
+      "owhs": [],
+      "digit_set": 2,
+      "align": 2,
+      "coords": [
+        {
+          "x": 254,
+          "y": 88
+        },
+        {
+          "x": 266,
+          "y": 88
+        }
+      ]
+    },
+    {
+      "e_type": 18,
+      "name": "bar_display",
+      "size": 96,
+      "raw_hex": "0112060be600380000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "owhs": [
+        {
+          "rel_offset": 8,
+          "offset": 0,
+          "w": 48,
+          "h": 16,
+          "image": {
+            "file": "images/elem_05_bar_display_00.png",
+            "w": 48,
+            "h": 16
+          }
+        },
+        {
+          "rel_offset": 16,
+          "offset": 0,
+          "w": 48,
+          "h": 16,
+          "image": {
+            "file": "images/elem_05_bar_display_01.png",
+            "w": 48,
+            "h": 16
+          }
+        },
+        {
+          "rel_offset": 24,
+          "offset": 0,
+          "w": 48,
+          "h": 16,
+          "image": {
+            "file": "images/elem_05_bar_display_02.png",
+            "w": 48,
+            "h": 16
+          }
+        },
+        {
+          "rel_offset": 32,
+          "offset": 0,
+          "w": 48,
+          "h": 16,
+          "image": {
+            "file": "images/elem_05_bar_display_03.png",
+            "w": 48,
+            "h": 16
+          }
+        },
+        {
+          "rel_offset": 40,
+          "offset": 0,
+          "w": 48,
+          "h": 16,
+          "image": {
+            "file": "images/elem_05_bar_display_04.png",
+            "w": 48,
+            "h": 16
+          }
+        },
+        {
+          "rel_offset": 48,
+          "offset": 0,
+          "w": 48,
+          "h": 16,
+          "image": {
+            "file": "images/elem_05_bar_display_05.png",
+            "w": 48,
+            "h": 16
+          }
+        },
+        {
+          "rel_offset": 56,
+          "offset": 0,
+          "w": 48,
+          "h": 16,
+          "image": {
+            "file": "images/elem_05_bar_display_06.png",
+            "w": 48,
+            "h": 16
+          }
+        },
+        {
+          "rel_offset": 64,
+          "offset": 0,
+          "w": 48,
+          "h": 16,
+          "image": {
+            "file": "images/elem_05_bar_display_07.png",
+            "w": 48,
+            "h": 16
+          }
+        },
+        {
+          "rel_offset": 72,
+          "offset": 0,
+          "w": 48,
+          "h": 16,
+          "image": {
+            "file": "images/elem_05_bar_display_08.png",
+            "w": 48,
+            "h": 16
+          }
+        },
+        {
+          "rel_offset": 80,
+          "offset": 0,
+          "w": 48,
+          "h": 16,
+          "image": {
+            "file": "images/elem_05_bar_display_09.png",
+            "w": 48,
+            "h": 16
+          }
+        },
+        {
+          "rel_offset": 88,
+          "offset": 0,
+          "w": 48,
+          "h": 16,
+          "image": {
+            "file": "images/elem_05_bar_display_10.png",
+            "w": 48,
+            "h": 16
+          }
+        }
+      ],
+      "x": 230,
+      "y": 56
+    },
+    {
+      "e_type": 6,
+      "name": "heart_rate_num",
+      "size": 26,
+      "raw_hex": "010603006400dc00000000000000000000000000000000000000",
+      "owhs": [],
+      "digit_set": 3,
+      "align": 0,
+      "x": 100,
+      "y": 220
+    },
+    {
+      "e_type": 7,
+      "name": "steps_num",
+      "size": 26,
+      "raw_hex": "01070300d7007201000000000000000000000000000000000000",
+      "owhs": [],
+      "digit_set": 3,
+      "align": 0,
+      "x": 215,
+      "y": 370
+    },
+    {
+      "e_type": 27,
+      "name": "weather",
+      "size": 79,
+      "raw_hex": "011b094001d700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "owhs": [
+        {
+          "rel_offset": 7,
+          "offset": 0,
+          "w": 32,
+          "h": 32,
+          "image": {
+            "file": "images/elem_08_weather_00.png",
+            "w": 32,
+            "h": 32
+          }
+        },
+        {
+          "rel_offset": 15,
+          "offset": 0,
+          "w": 32,
+          "h": 32,
+          "image": {
+            "file": "images/elem_08_weather_01.png",
+            "w": 32,
+            "h": 32
+          }
+        },
+        {
+          "rel_offset": 23,
+          "offset": 0,
+          "w": 32,
+          "h": 32,
+          "image": {
+            "file": "images/elem_08_weather_02.png",
+            "w": 32,
+            "h": 32
+          }
+        },
+        {
+          "rel_offset": 31,
+          "offset": 0,
+          "w": 32,
+          "h": 32,
+          "image": {
+            "file": "images/elem_08_weather_03.png",
+            "w": 32,
+            "h": 32
+          }
+        },
+        {
+          "rel_offset": 39,
+          "offset": 0,
+          "w": 32,
+          "h": 32,
+          "image": {
+            "file": "images/elem_08_weather_04.png",
+            "w": 32,
+            "h": 32
+          }
+        },
+        {
+          "rel_offset": 47,
+          "offset": 0,
+          "w": 32,
+          "h": 32,
+          "image": {
+            "file": "images/elem_08_weather_05.png",
+            "w": 32,
+            "h": 32
+          }
+        },
+        {
+          "rel_offset": 55,
+          "offset": 0,
+          "w": 32,
+          "h": 32,
+          "image": {
+            "file": "images/elem_08_weather_06.png",
+            "w": 32,
+            "h": 32
+          }
+        },
+        {
+          "rel_offset": 63,
+          "offset": 0,
+          "w": 32,
+          "h": 32,
+          "image": {
+            "file": "images/elem_08_weather_07.png",
+            "w": 32,
+            "h": 32
+          }
+        },
+        {
+          "rel_offset": 71,
+          "offset": 0,
+          "w": 32,
+          "h": 32,
+          "image": {
+            "file": "images/elem_08_weather_08.png",
+            "w": 32,
+            "h": 32
+          }
+        }
+      ],
+      "x": 320,
+      "y": 215
+    },
+    {
+      "e_type": 28,
+      "name": "decor_multi",
+      "size": 32,
+      "raw_hex": "011c03006301dc00000000000000000000000000000000000000000000000000",
+      "owhs": [
+        {
+          "rel_offset": 8,
+          "offset": 0,
+          "w": 15,
+          "h": 11,
+          "image": {
+            "file": "images/elem_09_decor_multi_00.png",
+            "w": 15,
+            "h": 11
+          }
+        },
+        {
+          "rel_offset": 16,
+          "offset": 0,
+          "w": 26,
+          "h": 20,
+          "image": {
+            "file": "images/elem_09_decor_multi_01.png",
+            "w": 26,
+            "h": 20
+          }
+        },
+        {
+          "rel_offset": 24,
+          "offset": 0,
+          "w": 24,
+          "h": 20,
+          "image": {
+            "file": "images/elem_09_decor_multi_02.png",
+            "w": 24,
+            "h": 20
+          }
+        }
+      ],
+      "x": 355,
+      "y": 220
+    }
+  ]
+}

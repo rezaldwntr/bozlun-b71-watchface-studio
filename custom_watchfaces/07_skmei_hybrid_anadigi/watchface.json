@@ -1,0 +1,542 @@
+{
+  "format": "watchface_bin",
+  "file_size": 0,
+  "api_ver": 35,
+  "unknown": 65535,
+  "preview": {
+    "offset": 0,
+    "w": 280,
+    "h": 280,
+    "image": {
+      "file": "images/preview.png",
+      "w": 280,
+      "h": 280
+    }
+  },
+  "d_offset": 16,
+  "e_offset": 184,
+  "digit_sets": [
+    {
+      "digit_set_id": 0,
+      "unknown": 257,
+      "glyphs": [
+        {
+          "offset": 0,
+          "w": 34,
+          "h": 56,
+          "image": {
+            "file": "images/digits_00_0.png",
+            "w": 34,
+            "h": 56
+          }
+        },
+        {
+          "offset": 0,
+          "w": 34,
+          "h": 56,
+          "image": {
+            "file": "images/digits_00_1.png",
+            "w": 34,
+            "h": 56
+          }
+        },
+        {
+          "offset": 0,
+          "w": 34,
+          "h": 56,
+          "image": {
+            "file": "images/digits_00_2.png",
+            "w": 34,
+            "h": 56
+          }
+        },
+        {
+          "offset": 0,
+          "w": 34,
+          "h": 56,
+          "image": {
+            "file": "images/digits_00_3.png",
+            "w": 34,
+            "h": 56
+          }
+        },
+        {
+          "offset": 0,
+          "w": 34,
+          "h": 56,
+          "image": {
+            "file": "images/digits_00_4.png",
+            "w": 34,
+            "h": 56
+          }
+        },
+        {
+          "offset": 0,
+          "w": 34,
+          "h": 56,
+          "image": {
+            "file": "images/digits_00_5.png",
+            "w": 34,
+            "h": 56
+          }
+        },
+        {
+          "offset": 0,
+          "w": 34,
+          "h": 56,
+          "image": {
+            "file": "images/digits_00_6.png",
+            "w": 34,
+            "h": 56
+          }
+        },
+        {
+          "offset": 0,
+          "w": 34,
+          "h": 56,
+          "image": {
+            "file": "images/digits_00_7.png",
+            "w": 34,
+            "h": 56
+          }
+        },
+        {
+          "offset": 0,
+          "w": 34,
+          "h": 56,
+          "image": {
+            "file": "images/digits_00_8.png",
+            "w": 34,
+            "h": 56
+          }
+        },
+        {
+          "offset": 0,
+          "w": 34,
+          "h": 56,
+          "image": {
+            "file": "images/digits_00_9.png",
+            "w": 34,
+            "h": 56
+          }
+        }
+      ]
+    },
+    {
+      "digit_set_id": 1,
+      "unknown": 257,
+      "glyphs": [
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 22,
+          "image": {
+            "file": "images/digits_01_0.png",
+            "w": 13,
+            "h": 22
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 22,
+          "image": {
+            "file": "images/digits_01_1.png",
+            "w": 13,
+            "h": 22
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 22,
+          "image": {
+            "file": "images/digits_01_2.png",
+            "w": 13,
+            "h": 22
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 22,
+          "image": {
+            "file": "images/digits_01_3.png",
+            "w": 13,
+            "h": 22
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 22,
+          "image": {
+            "file": "images/digits_01_4.png",
+            "w": 13,
+            "h": 22
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 22,
+          "image": {
+            "file": "images/digits_01_5.png",
+            "w": 13,
+            "h": 22
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 22,
+          "image": {
+            "file": "images/digits_01_6.png",
+            "w": 13,
+            "h": 22
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 22,
+          "image": {
+            "file": "images/digits_01_7.png",
+            "w": 13,
+            "h": 22
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 22,
+          "image": {
+            "file": "images/digits_01_8.png",
+            "w": 13,
+            "h": 22
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 22,
+          "image": {
+            "file": "images/digits_01_9.png",
+            "w": 13,
+            "h": 22
+          }
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "e_type": 0,
+      "name": "image",
+      "size": 14,
+      "raw_hex": "01000000000000000000d201d201",
+      "owhs": [
+        {
+          "rel_offset": 6,
+          "offset": 0,
+          "w": 466,
+          "h": 466,
+          "image": {
+            "file": "images/elem_00_image_00.png",
+            "w": 466,
+            "h": 466
+          }
+        }
+      ],
+      "x": 0,
+      "y": 0
+    },
+    {
+      "e_type": 2,
+      "name": "time_num",
+      "size": 34,
+      "raw_hex": "0102000000008e000801b4000801ee00080114010801000000000000000000000000",
+      "owhs": [],
+      "digit_sets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "coords": [
+        {
+          "x": 142,
+          "y": 264
+        },
+        {
+          "x": 180,
+          "y": 264
+        },
+        {
+          "x": 238,
+          "y": 264
+        },
+        {
+          "x": 276,
+          "y": 264
+        }
+      ]
+    },
+    {
+      "e_type": 9,
+      "name": "kcal_num",
+      "size": 17,
+      "raw_hex": "01090100be005800000000000000000000",
+      "owhs": [],
+      "digit_set": 1,
+      "align": 0,
+      "x": 190,
+      "y": 88
+    },
+    {
+      "e_type": 6,
+      "name": "heart_rate_num",
+      "size": 26,
+      "raw_hex": "0106010000015800000000000000000000000000000000000000",
+      "owhs": [],
+      "digit_set": 1,
+      "align": 0,
+      "x": 256,
+      "y": 88
+    },
+    {
+      "e_type": 8,
+      "name": "distance_num",
+      "size": 26,
+      "raw_hex": "010801007d00b400000000000000000000000000000000000000",
+      "owhs": [],
+      "digit_set": 1,
+      "align": 0,
+      "x": 125,
+      "y": 180
+    },
+    {
+      "e_type": 7,
+      "name": "steps_num",
+      "size": 26,
+      "raw_hex": "010701003601b200000000000000000000000000000000000000",
+      "owhs": [],
+      "digit_set": 1,
+      "align": 0,
+      "x": 310,
+      "y": 178
+    },
+    {
+      "e_type": 4,
+      "name": "day_name",
+      "size": 63,
+      "raw_hex": "0104010e0148010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "owhs": [
+        {
+          "rel_offset": 7,
+          "offset": 0,
+          "w": 39,
+          "h": 13,
+          "image": {
+            "file": "images/elem_06_day_name_00.png",
+            "w": 39,
+            "h": 13
+          }
+        },
+        {
+          "rel_offset": 15,
+          "offset": 0,
+          "w": 39,
+          "h": 13,
+          "image": {
+            "file": "images/elem_06_day_name_01.png",
+            "w": 39,
+            "h": 13
+          }
+        },
+        {
+          "rel_offset": 23,
+          "offset": 0,
+          "w": 39,
+          "h": 13,
+          "image": {
+            "file": "images/elem_06_day_name_02.png",
+            "w": 39,
+            "h": 13
+          }
+        },
+        {
+          "rel_offset": 31,
+          "offset": 0,
+          "w": 39,
+          "h": 13,
+          "image": {
+            "file": "images/elem_06_day_name_03.png",
+            "w": 39,
+            "h": 13
+          }
+        },
+        {
+          "rel_offset": 39,
+          "offset": 0,
+          "w": 39,
+          "h": 13,
+          "image": {
+            "file": "images/elem_06_day_name_04.png",
+            "w": 39,
+            "h": 13
+          }
+        },
+        {
+          "rel_offset": 47,
+          "offset": 0,
+          "w": 39,
+          "h": 13,
+          "image": {
+            "file": "images/elem_06_day_name_05.png",
+            "w": 39,
+            "h": 13
+          }
+        },
+        {
+          "rel_offset": 55,
+          "offset": 0,
+          "w": 39,
+          "h": 13,
+          "image": {
+            "file": "images/elem_06_day_name_06.png",
+            "w": 39,
+            "h": 13
+          }
+        }
+      ],
+      "x": 270,
+      "y": 328
+    },
+    {
+      "e_type": 15,
+      "name": "month_num",
+      "size": 12,
+      "raw_hex": "010f0102b9004801c6004801",
+      "owhs": [],
+      "digit_set": 1,
+      "align": 2,
+      "coords": [
+        {
+          "x": 185,
+          "y": 328
+        },
+        {
+          "x": 198,
+          "y": 328
+        }
+      ]
+    },
+    {
+      "e_type": 13,
+      "name": "day_num",
+      "size": 12,
+      "raw_hex": "010d0102d8004801e5004801",
+      "owhs": [],
+      "digit_set": 1,
+      "align": 2,
+      "coords": [
+        {
+          "x": 216,
+          "y": 328
+        },
+        {
+          "x": 229,
+          "y": 328
+        }
+      ]
+    },
+    {
+      "e_type": 10,
+      "name": "time_hand",
+      "size": 19,
+      "raw_hex": "010a00df006c000000000014009600ffffffff",
+      "owhs": [
+        {
+          "rel_offset": 7,
+          "offset": 0,
+          "w": 20,
+          "h": 150,
+          "image": {
+            "file": "images/elem_09_time_hand_00.png",
+            "w": 20,
+            "h": 150
+          }
+        }
+      ],
+      "hand_type": 0,
+      "pivot_x": 223,
+      "pivot_y": 108
+    },
+    {
+      "e_type": 10,
+      "name": "time_hand",
+      "size": 19,
+      "raw_hex": "010a01e1003500000000001000d200ffffffff",
+      "owhs": [
+        {
+          "rel_offset": 7,
+          "offset": 0,
+          "w": 16,
+          "h": 210,
+          "image": {
+            "file": "images/elem_10_time_hand_00.png",
+            "w": 16,
+            "h": 210
+          }
+        }
+      ],
+      "hand_type": 1,
+      "pivot_x": 225,
+      "pivot_y": 53
+    },
+    {
+      "e_type": 10,
+      "name": "time_hand",
+      "size": 19,
+      "raw_hex": "010a02e50012000000000008000e01ffffffff",
+      "owhs": [
+        {
+          "rel_offset": 7,
+          "offset": 0,
+          "w": 8,
+          "h": 270,
+          "image": {
+            "file": "images/elem_11_time_hand_00.png",
+            "w": 8,
+            "h": 270
+          }
+        }
+      ],
+      "hand_type": 2,
+      "pivot_x": 229,
+      "pivot_y": 18
+    },
+    {
+      "e_type": 0,
+      "name": "image",
+      "size": 14,
+      "raw_hex": "0100de00de000000000016001600",
+      "owhs": [
+        {
+          "rel_offset": 6,
+          "offset": 0,
+          "w": 22,
+          "h": 22,
+          "image": {
+            "file": "images/elem_12_image_00.png",
+            "w": 22,
+            "h": 22
+          }
+        }
+      ],
+      "x": 222,
+      "y": 222
+    }
+  ]
+}

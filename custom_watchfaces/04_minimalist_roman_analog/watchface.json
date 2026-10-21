@@ -1,0 +1,342 @@
+{
+  "format": "watchface_bin",
+  "file_size": 0,
+  "api_ver": 35,
+  "unknown": 65535,
+  "preview": {
+    "offset": 0,
+    "w": 280,
+    "h": 280,
+    "image": {
+      "file": "images/preview.png",
+      "w": 280,
+      "h": 280
+    }
+  },
+  "d_offset": 16,
+  "e_offset": 101,
+  "digit_sets": [
+    {
+      "digit_set_id": 0,
+      "unknown": 257,
+      "glyphs": [
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 16,
+          "image": {
+            "file": "images/digits_00_0.png",
+            "w": 13,
+            "h": 16
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 16,
+          "image": {
+            "file": "images/digits_00_1.png",
+            "w": 13,
+            "h": 16
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 16,
+          "image": {
+            "file": "images/digits_00_2.png",
+            "w": 13,
+            "h": 16
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 16,
+          "image": {
+            "file": "images/digits_00_3.png",
+            "w": 13,
+            "h": 16
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 16,
+          "image": {
+            "file": "images/digits_00_4.png",
+            "w": 13,
+            "h": 16
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 16,
+          "image": {
+            "file": "images/digits_00_5.png",
+            "w": 13,
+            "h": 16
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 16,
+          "image": {
+            "file": "images/digits_00_6.png",
+            "w": 13,
+            "h": 16
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 16,
+          "image": {
+            "file": "images/digits_00_7.png",
+            "w": 13,
+            "h": 16
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 16,
+          "image": {
+            "file": "images/digits_00_8.png",
+            "w": 13,
+            "h": 16
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 16,
+          "image": {
+            "file": "images/digits_00_9.png",
+            "w": 13,
+            "h": 16
+          }
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "e_type": 0,
+      "name": "image",
+      "size": 14,
+      "raw_hex": "01000000000000000000d201d201",
+      "owhs": [
+        {
+          "rel_offset": 6,
+          "offset": 0,
+          "w": 466,
+          "h": 466,
+          "image": {
+            "file": "images/elem_00_image_00.png",
+            "w": 466,
+            "h": 466
+          }
+        }
+      ],
+      "x": 0,
+      "y": 0
+    },
+    {
+      "e_type": 4,
+      "name": "day_name",
+      "size": 63,
+      "raw_hex": "0104012e01de000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "owhs": [
+        {
+          "rel_offset": 7,
+          "offset": 0,
+          "w": 43,
+          "h": 15,
+          "image": {
+            "file": "images/elem_01_day_name_00.png",
+            "w": 43,
+            "h": 15
+          }
+        },
+        {
+          "rel_offset": 15,
+          "offset": 0,
+          "w": 43,
+          "h": 15,
+          "image": {
+            "file": "images/elem_01_day_name_01.png",
+            "w": 43,
+            "h": 15
+          }
+        },
+        {
+          "rel_offset": 23,
+          "offset": 0,
+          "w": 43,
+          "h": 15,
+          "image": {
+            "file": "images/elem_01_day_name_02.png",
+            "w": 43,
+            "h": 15
+          }
+        },
+        {
+          "rel_offset": 31,
+          "offset": 0,
+          "w": 43,
+          "h": 15,
+          "image": {
+            "file": "images/elem_01_day_name_03.png",
+            "w": 43,
+            "h": 15
+          }
+        },
+        {
+          "rel_offset": 39,
+          "offset": 0,
+          "w": 43,
+          "h": 15,
+          "image": {
+            "file": "images/elem_01_day_name_04.png",
+            "w": 43,
+            "h": 15
+          }
+        },
+        {
+          "rel_offset": 47,
+          "offset": 0,
+          "w": 43,
+          "h": 15,
+          "image": {
+            "file": "images/elem_01_day_name_05.png",
+            "w": 43,
+            "h": 15
+          }
+        },
+        {
+          "rel_offset": 55,
+          "offset": 0,
+          "w": 43,
+          "h": 15,
+          "image": {
+            "file": "images/elem_01_day_name_06.png",
+            "w": 43,
+            "h": 15
+          }
+        }
+      ],
+      "x": 302,
+      "y": 222
+    },
+    {
+      "e_type": 13,
+      "name": "day_num",
+      "size": 12,
+      "raw_hex": "010d00025e01de006a01de00",
+      "owhs": [],
+      "digit_set": 0,
+      "align": 2,
+      "coords": [
+        {
+          "x": 350,
+          "y": 222
+        },
+        {
+          "x": 362,
+          "y": 222
+        }
+      ]
+    },
+    {
+      "e_type": 10,
+      "name": "time_hand",
+      "size": 19,
+      "raw_hex": "010a00e00067000000000012009c00ffffffff",
+      "owhs": [
+        {
+          "rel_offset": 7,
+          "offset": 0,
+          "w": 18,
+          "h": 156,
+          "image": {
+            "file": "images/elem_03_time_hand_00.png",
+            "w": 18,
+            "h": 156
+          }
+        }
+      ],
+      "hand_type": 0,
+      "pivot_x": 224,
+      "pivot_y": 103
+    },
+    {
+      "e_type": 10,
+      "name": "time_hand",
+      "size": 19,
+      "raw_hex": "010a01e2002b00000000000e00de00ffffffff",
+      "owhs": [
+        {
+          "rel_offset": 7,
+          "offset": 0,
+          "w": 14,
+          "h": 222,
+          "image": {
+            "file": "images/elem_04_time_hand_00.png",
+            "w": 14,
+            "h": 222
+          }
+        }
+      ],
+      "hand_type": 1,
+      "pivot_x": 226,
+      "pivot_y": 43
+    },
+    {
+      "e_type": 10,
+      "name": "time_hand",
+      "size": 19,
+      "raw_hex": "010a02e50012000000000008000e01ffffffff",
+      "owhs": [
+        {
+          "rel_offset": 7,
+          "offset": 0,
+          "w": 8,
+          "h": 270,
+          "image": {
+            "file": "images/elem_05_time_hand_00.png",
+            "w": 8,
+            "h": 270
+          }
+        }
+      ],
+      "hand_type": 2,
+      "pivot_x": 229,
+      "pivot_y": 18
+    },
+    {
+      "e_type": 0,
+      "name": "image",
+      "size": 14,
+      "raw_hex": "0100de00de000000000016001600",
+      "owhs": [
+        {
+          "rel_offset": 6,
+          "offset": 0,
+          "w": 22,
+          "h": 22,
+          "image": {
+            "file": "images/elem_06_image_00.png",
+            "w": 22,
+            "h": 22
+          }
+        }
+      ],
+      "x": 222,
+      "y": 222
+    }
+  ]
+}

@@ -1,0 +1,996 @@
+{
+  "format": "watchface_bin",
+  "file_size": 634928,
+  "api_ver": 35,
+  "unknown": 65535,
+  "preview": {
+    "offset": 576220,
+    "w": 280,
+    "h": 280,
+    "image": {
+      "file": "images/preview.png",
+      "raw_cache": "raw_blobs/preview.rle",
+      "png_sha256": "fd51ea9a5b07f49e9400d68fdb8ded15585daf9669e58a4a0e360a7c2619b073",
+      "orig_offset": 576220,
+      "w": 280,
+      "h": 280
+    }
+  },
+  "d_offset": 16,
+  "e_offset": 350,
+  "digit_sets": [
+    {
+      "digit_set_id": 0,
+      "unknown": 257,
+      "glyphs": [
+        {
+          "offset": 27328,
+          "w": 73,
+          "h": 151,
+          "image": {
+            "file": "images/digits_00_0.png",
+            "raw_cache": "raw_blobs/digits_00_0.rle",
+            "png_sha256": "b01ac2bedbf823452e803e738c8bd35b8f77057b523e1333b2011e250e7157c5",
+            "orig_offset": 27328,
+            "w": 73,
+            "h": 151
+          }
+        },
+        {
+          "offset": 53564,
+          "w": 73,
+          "h": 151,
+          "image": {
+            "file": "images/digits_00_1.png",
+            "raw_cache": "raw_blobs/digits_00_1.rle",
+            "png_sha256": "91c144015406c6f75824e1f39b5b4d7d570b9f54810a578282ea04d18b611191",
+            "orig_offset": 53564,
+            "w": 73,
+            "h": 151
+          }
+        },
+        {
+          "offset": 71340,
+          "w": 73,
+          "h": 151,
+          "image": {
+            "file": "images/digits_00_2.png",
+            "raw_cache": "raw_blobs/digits_00_2.rle",
+            "png_sha256": "5937c215a19adc8a2f56a7b68849773e4d38fac81712e0f5fabf720f796dea11",
+            "orig_offset": 71340,
+            "w": 73,
+            "h": 151
+          }
+        },
+        {
+          "offset": 96396,
+          "w": 73,
+          "h": 151,
+          "image": {
+            "file": "images/digits_00_3.png",
+            "raw_cache": "raw_blobs/digits_00_3.rle",
+            "png_sha256": "678d495b44539c323fd8a19059c2fca0a03a7e3fe01297790bc6f695277dba40",
+            "orig_offset": 96396,
+            "w": 73,
+            "h": 151
+          }
+        },
+        {
+          "offset": 119760,
+          "w": 73,
+          "h": 151,
+          "image": {
+            "file": "images/digits_00_4.png",
+            "raw_cache": "raw_blobs/digits_00_4.rle",
+            "png_sha256": "fbf5a9e4a92a3b28fbab5d576451926ece0b8afbe6c8d57c43d8f6c59884e11c",
+            "orig_offset": 119760,
+            "w": 73,
+            "h": 151
+          }
+        },
+        {
+          "offset": 141944,
+          "w": 73,
+          "h": 151,
+          "image": {
+            "file": "images/digits_00_5.png",
+            "raw_cache": "raw_blobs/digits_00_5.rle",
+            "png_sha256": "06e1534d165e71fb7602e3d93d5829c8ce3f466785e357d55d85dd83e14aca8f",
+            "orig_offset": 141944,
+            "w": 73,
+            "h": 151
+          }
+        },
+        {
+          "offset": 164584,
+          "w": 73,
+          "h": 151,
+          "image": {
+            "file": "images/digits_00_6.png",
+            "raw_cache": "raw_blobs/digits_00_6.rle",
+            "png_sha256": "9b44ecb55a6a1ccb6bd5e2c16131e25369cda799a575f82e46c4bcba55f3b3f3",
+            "orig_offset": 164584,
+            "w": 73,
+            "h": 151
+          }
+        },
+        {
+          "offset": 189732,
+          "w": 73,
+          "h": 151,
+          "image": {
+            "file": "images/digits_00_7.png",
+            "raw_cache": "raw_blobs/digits_00_7.rle",
+            "png_sha256": "c5ca4f731765ab28bd40d2053f82bef3ee0d01624faf7db89fcca7e3be743415",
+            "orig_offset": 189732,
+            "w": 73,
+            "h": 151
+          }
+        },
+        {
+          "offset": 209060,
+          "w": 73,
+          "h": 151,
+          "image": {
+            "file": "images/digits_00_8.png",
+            "raw_cache": "raw_blobs/digits_00_8.rle",
+            "png_sha256": "941f687924a3e2a6a659b1e245f046554dcc85693acbb578ab26fc3253fc5786",
+            "orig_offset": 209060,
+            "w": 73,
+            "h": 151
+          }
+        },
+        {
+          "offset": 236160,
+          "w": 73,
+          "h": 151,
+          "image": {
+            "file": "images/digits_00_9.png",
+            "raw_cache": "raw_blobs/digits_00_9.rle",
+            "png_sha256": "19a0ed31eb3035e9ed63213f3c9b8b8def1044e804f734961719f5dce5af17ce",
+            "orig_offset": 236160,
+            "w": 73,
+            "h": 151
+          }
+        }
+      ]
+    },
+    {
+      "digit_set_id": 1,
+      "unknown": 257,
+      "glyphs": [
+        {
+          "offset": 261100,
+          "w": 72,
+          "h": 149,
+          "image": {
+            "file": "images/digits_01_0.png",
+            "raw_cache": "raw_blobs/digits_01_0.rle",
+            "png_sha256": "29bbcc2a72adb141ed33a4847406f5ffd5f52c2357140e71df0ca8d29a92d400",
+            "orig_offset": 261100,
+            "w": 72,
+            "h": 149
+          }
+        },
+        {
+          "offset": 287056,
+          "w": 72,
+          "h": 149,
+          "image": {
+            "file": "images/digits_01_1.png",
+            "raw_cache": "raw_blobs/digits_01_1.rle",
+            "png_sha256": "31a24b663b09123357571d8ef0b687273efb4bd2fc897da265b34a49dd1d60c1",
+            "orig_offset": 287056,
+            "w": 72,
+            "h": 149
+          }
+        },
+        {
+          "offset": 304404,
+          "w": 72,
+          "h": 149,
+          "image": {
+            "file": "images/digits_01_2.png",
+            "raw_cache": "raw_blobs/digits_01_2.rle",
+            "png_sha256": "7eaa14baeba3c82fe62f47aab8d8567c5f034b9b9048ff88094b49ab22e8a080",
+            "orig_offset": 304404,
+            "w": 72,
+            "h": 149
+          }
+        },
+        {
+          "offset": 329140,
+          "w": 72,
+          "h": 149,
+          "image": {
+            "file": "images/digits_01_3.png",
+            "raw_cache": "raw_blobs/digits_01_3.rle",
+            "png_sha256": "e85b2a177ea909b12b69e5b4e00de3c7be2210aa1135c8f133e6510369586f46",
+            "orig_offset": 329140,
+            "w": 72,
+            "h": 149
+          }
+        },
+        {
+          "offset": 352380,
+          "w": 72,
+          "h": 149,
+          "image": {
+            "file": "images/digits_01_4.png",
+            "raw_cache": "raw_blobs/digits_01_4.rle",
+            "png_sha256": "c0df5bbf8b0b72d27948a6b97fea6fae7a983da1f11416e06c1c708cc34aa7a8",
+            "orig_offset": 352380,
+            "w": 72,
+            "h": 149
+          }
+        },
+        {
+          "offset": 374724,
+          "w": 72,
+          "h": 149,
+          "image": {
+            "file": "images/digits_01_5.png",
+            "raw_cache": "raw_blobs/digits_01_5.rle",
+            "png_sha256": "c1aa3fd6ac953763874c79f4b173bcbc9a89f98927082882ce12ec620d9a51f0",
+            "orig_offset": 374724,
+            "w": 72,
+            "h": 149
+          }
+        },
+        {
+          "offset": 397288,
+          "w": 72,
+          "h": 149,
+          "image": {
+            "file": "images/digits_01_6.png",
+            "raw_cache": "raw_blobs/digits_01_6.rle",
+            "png_sha256": "f30f4d069483384c54fd3d376fc6a0a1f1a81f78d0975921750e540675cdecf2",
+            "orig_offset": 397288,
+            "w": 72,
+            "h": 149
+          }
+        },
+        {
+          "offset": 422260,
+          "w": 72,
+          "h": 149,
+          "image": {
+            "file": "images/digits_01_7.png",
+            "raw_cache": "raw_blobs/digits_01_7.rle",
+            "png_sha256": "4f54f2b137c840679120d3908a5c7c3c4a27973f6858ef544caf99f30b450b21",
+            "orig_offset": 422260,
+            "w": 72,
+            "h": 149
+          }
+        },
+        {
+          "offset": 441408,
+          "w": 72,
+          "h": 149,
+          "image": {
+            "file": "images/digits_01_8.png",
+            "raw_cache": "raw_blobs/digits_01_8.rle",
+            "png_sha256": "85da6fe837ea76daff85207a6a35fbe0217fcf7cee842660ff8add2d21d57af6",
+            "orig_offset": 441408,
+            "w": 72,
+            "h": 149
+          }
+        },
+        {
+          "offset": 468312,
+          "w": 72,
+          "h": 149,
+          "image": {
+            "file": "images/digits_01_9.png",
+            "raw_cache": "raw_blobs/digits_01_9.rle",
+            "png_sha256": "0c9c08d9900e5047a21bbb97d9f1485f1cee0d0b4d48cf7d3c3443f8f309c949",
+            "orig_offset": 468312,
+            "w": 72,
+            "h": 149
+          }
+        }
+      ]
+    },
+    {
+      "digit_set_id": 2,
+      "unknown": 257,
+      "glyphs": [
+        {
+          "offset": 493144,
+          "w": 13,
+          "h": 31,
+          "image": {
+            "file": "images/digits_02_0.png",
+            "raw_cache": "raw_blobs/digits_02_0.rle",
+            "png_sha256": "a20229ce3b4cfcccc588ee010737e4f49f3a76a5832abbdb05faf624f74a4e66",
+            "orig_offset": 493144,
+            "w": 13,
+            "h": 31
+          }
+        },
+        {
+          "offset": 493924,
+          "w": 13,
+          "h": 31,
+          "image": {
+            "file": "images/digits_02_1.png",
+            "raw_cache": "raw_blobs/digits_02_1.rle",
+            "png_sha256": "dcd719aa06602a0a2caa7f1dadb9f57472889ead6d4e5045e4f9b3051b45ecb0",
+            "orig_offset": 493924,
+            "w": 13,
+            "h": 31
+          }
+        },
+        {
+          "offset": 494696,
+          "w": 13,
+          "h": 31,
+          "image": {
+            "file": "images/digits_02_2.png",
+            "raw_cache": "raw_blobs/digits_02_2.rle",
+            "png_sha256": "679529e47ce3962dee6697e44ab6cd082ba38b31b5e19097766581bd0ac82f6a",
+            "orig_offset": 494696,
+            "w": 13,
+            "h": 31
+          }
+        },
+        {
+          "offset": 495388,
+          "w": 13,
+          "h": 31,
+          "image": {
+            "file": "images/digits_02_3.png",
+            "raw_cache": "raw_blobs/digits_02_3.rle",
+            "png_sha256": "4da3bacfb6100985edb41d2006c18ecb6d4da3f9e67e5366ec2ccee85194a378",
+            "orig_offset": 495388,
+            "w": 13,
+            "h": 31
+          }
+        },
+        {
+          "offset": 496132,
+          "w": 13,
+          "h": 31,
+          "image": {
+            "file": "images/digits_02_4.png",
+            "raw_cache": "raw_blobs/digits_02_4.rle",
+            "png_sha256": "01b4674520364e33e24484f59b98efe9e4d25ce29f271db4de12cd449df4e288",
+            "orig_offset": 496132,
+            "w": 13,
+            "h": 31
+          }
+        },
+        {
+          "offset": 496952,
+          "w": 13,
+          "h": 31,
+          "image": {
+            "file": "images/digits_02_5.png",
+            "raw_cache": "raw_blobs/digits_02_5.rle",
+            "png_sha256": "95135d13d3c3b1d136c88e621a9f31f4aa9d87905bf7e3915f53eb2c6d76aa83",
+            "orig_offset": 496952,
+            "w": 13,
+            "h": 31
+          }
+        },
+        {
+          "offset": 497620,
+          "w": 13,
+          "h": 31,
+          "image": {
+            "file": "images/digits_02_6.png",
+            "raw_cache": "raw_blobs/digits_02_6.rle",
+            "png_sha256": "c2cce40343b012dfed31bf35cff2e47c55b606b7076445939a4bd5eb4abf87e1",
+            "orig_offset": 497620,
+            "w": 13,
+            "h": 31
+          }
+        },
+        {
+          "offset": 498424,
+          "w": 13,
+          "h": 31,
+          "image": {
+            "file": "images/digits_02_7.png",
+            "raw_cache": "raw_blobs/digits_02_7.rle",
+            "png_sha256": "9d10867def0368575125e265575e1666cec02a7d6f818112260c2a63776183db",
+            "orig_offset": 498424,
+            "w": 13,
+            "h": 31
+          }
+        },
+        {
+          "offset": 499124,
+          "w": 13,
+          "h": 31,
+          "image": {
+            "file": "images/digits_02_8.png",
+            "raw_cache": "raw_blobs/digits_02_8.rle",
+            "png_sha256": "dc072fa709b5e441120231cfc274e34a72439f87276f20a010a780cdd2885c8b",
+            "orig_offset": 499124,
+            "w": 13,
+            "h": 31
+          }
+        },
+        {
+          "offset": 499976,
+          "w": 13,
+          "h": 31,
+          "image": {
+            "file": "images/digits_02_9.png",
+            "raw_cache": "raw_blobs/digits_02_9.rle",
+            "png_sha256": "75d865b2b93fa15f4d597887e5a47796ea60b977efdd4cfcc05b3e02f64076b3",
+            "orig_offset": 499976,
+            "w": 13,
+            "h": 31
+          }
+        }
+      ]
+    },
+    {
+      "digit_set_id": 3,
+      "unknown": 0,
+      "glyphs": [
+        {
+          "offset": 519136,
+          "w": 13,
+          "h": 31,
+          "image": {
+            "file": "images/digits_03_0.png",
+            "raw_cache": "raw_blobs/digits_03_0.rle",
+            "png_sha256": "742c753b33fc1a51769f99badc1be5993251ef0359faf7e447d674a789b4b204",
+            "orig_offset": 519136,
+            "w": 13,
+            "h": 31
+          }
+        },
+        {
+          "offset": 519916,
+          "w": 13,
+          "h": 31,
+          "image": {
+            "file": "images/digits_03_1.png",
+            "raw_cache": "raw_blobs/digits_03_1.rle",
+            "png_sha256": "ec435cba4d9363c4abfdb4170896724d9985ea4eb7962ae1cc11e543a36cbd6c",
+            "orig_offset": 519916,
+            "w": 13,
+            "h": 31
+          }
+        },
+        {
+          "offset": 520688,
+          "w": 13,
+          "h": 31,
+          "image": {
+            "file": "images/digits_03_2.png",
+            "raw_cache": "raw_blobs/digits_03_2.rle",
+            "png_sha256": "92a8c1da355209dafcfa86111cdc34ec4838be4ea6a5a523cec3e17d56c7ed2f",
+            "orig_offset": 520688,
+            "w": 13,
+            "h": 31
+          }
+        },
+        {
+          "offset": 521380,
+          "w": 13,
+          "h": 31,
+          "image": {
+            "file": "images/digits_03_3.png",
+            "raw_cache": "raw_blobs/digits_03_3.rle",
+            "png_sha256": "60bf4c13d9c1e7ee741b2fce8d194c1b1aa65078406d6e0a29858b264d6e9560",
+            "orig_offset": 521380,
+            "w": 13,
+            "h": 31
+          }
+        },
+        {
+          "offset": 522124,
+          "w": 13,
+          "h": 31,
+          "image": {
+            "file": "images/digits_03_4.png",
+            "raw_cache": "raw_blobs/digits_03_4.rle",
+            "png_sha256": "a67a7e726d711934570b77c268a823af7a8cf7fd8a4c98c698d8e9880863266d",
+            "orig_offset": 522124,
+            "w": 13,
+            "h": 31
+          }
+        },
+        {
+          "offset": 522944,
+          "w": 13,
+          "h": 31,
+          "image": {
+            "file": "images/digits_03_5.png",
+            "raw_cache": "raw_blobs/digits_03_5.rle",
+            "png_sha256": "b86a4c7a6d3a7906b447feec803ddd936d0b354f81c199b1d8e4ddd801b3a8dc",
+            "orig_offset": 522944,
+            "w": 13,
+            "h": 31
+          }
+        },
+        {
+          "offset": 523612,
+          "w": 13,
+          "h": 31,
+          "image": {
+            "file": "images/digits_03_6.png",
+            "raw_cache": "raw_blobs/digits_03_6.rle",
+            "png_sha256": "c09e601c9020089d68c7fab189c28f56bdb2b018809acab1b7cf7f275a33cf9d",
+            "orig_offset": 523612,
+            "w": 13,
+            "h": 31
+          }
+        },
+        {
+          "offset": 524416,
+          "w": 13,
+          "h": 31,
+          "image": {
+            "file": "images/digits_03_7.png",
+            "raw_cache": "raw_blobs/digits_03_7.rle",
+            "png_sha256": "d8a3bd6fe43ddc135b66b5e4050f369cfd140bd7cfa67b94288109f29616324c",
+            "orig_offset": 524416,
+            "w": 13,
+            "h": 31
+          }
+        },
+        {
+          "offset": 525116,
+          "w": 13,
+          "h": 31,
+          "image": {
+            "file": "images/digits_03_8.png",
+            "raw_cache": "raw_blobs/digits_03_8.rle",
+            "png_sha256": "233b53d3c54139663e84a126c8a2dacbd4c51d481ff375e5b361276600fbb844",
+            "orig_offset": 525116,
+            "w": 13,
+            "h": 31
+          }
+        },
+        {
+          "offset": 525968,
+          "w": 13,
+          "h": 31,
+          "image": {
+            "file": "images/digits_03_9.png",
+            "raw_cache": "raw_blobs/digits_03_9.rle",
+            "png_sha256": "682a24199804a69ae169659d4fe5e1df0d2665355dcb8587e533859de564a3e9",
+            "orig_offset": 525968,
+            "w": 13,
+            "h": 31
+          }
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "e_type": 35,
+      "name": "dash",
+      "size": 10,
+      "raw_hex": "012344c8080001000100",
+      "owhs": [
+        {
+          "rel_offset": 2,
+          "offset": 575556,
+          "w": 1,
+          "h": 1,
+          "image": {
+            "file": "images/elem_00_dash_00.png",
+            "raw_cache": "raw_blobs/elem_00_dash_00.rle",
+            "png_sha256": "ca72ec9ccf9c0d4a21492c712d803b37a598a79cd82142df9414cd6c07cbc6f3",
+            "orig_offset": 575556,
+            "w": 1,
+            "h": 1
+          }
+        }
+      ]
+    },
+    {
+      "e_type": 0,
+      "name": "image",
+      "size": 14,
+      "raw_hex": "01000000000098020000d201d201",
+      "owhs": [
+        {
+          "rel_offset": 6,
+          "offset": 664,
+          "w": 466,
+          "h": 466,
+          "image": {
+            "file": "images/elem_01_image_00.png",
+            "raw_cache": "raw_blobs/elem_01_image_00.rle",
+            "png_sha256": "ff076d58569cf6a37d9b6be8f613e098066494288598d080c4b4f5313b796814",
+            "orig_offset": 664,
+            "w": 466,
+            "h": 466
+          }
+        }
+      ],
+      "x": 0,
+      "y": 0
+    },
+    {
+      "e_type": 2,
+      "name": "time_num",
+      "size": 34,
+      "raw_hex": "01020101000025006f0080006f000c016f0068016f00000000000000000000000000",
+      "owhs": [],
+      "digit_sets": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "coords": [
+        {
+          "x": 37,
+          "y": 111
+        },
+        {
+          "x": 128,
+          "y": 111
+        },
+        {
+          "x": 268,
+          "y": 111
+        },
+        {
+          "x": 360,
+          "y": 111
+        }
+      ]
+    },
+    {
+      "e_type": 13,
+      "name": "day_num",
+      "size": 12,
+      "raw_hex": "010d02027f0029008e002900",
+      "owhs": [],
+      "digit_set": 2,
+      "align": 2,
+      "coords": [
+        {
+          "x": 127,
+          "y": 41
+        },
+        {
+          "x": 142,
+          "y": 41
+        }
+      ]
+    },
+    {
+      "e_type": 15,
+      "name": "month_num",
+      "size": 12,
+      "raw_hex": "010f0202b2002900c1002900",
+      "owhs": [],
+      "digit_set": 2,
+      "align": 2,
+      "coords": [
+        {
+          "x": 178,
+          "y": 41
+        },
+        {
+          "x": 193,
+          "y": 41
+        }
+      ]
+    },
+    {
+      "e_type": 4,
+      "name": "day_name",
+      "size": 63,
+      "raw_hex": "010401080125002ca407003d0033003caf07003d00330014bd07003d003300c4c507003d00330058d107003d003300f0da07003d003300d8e207003d003300",
+      "owhs": [
+        {
+          "rel_offset": 7,
+          "offset": 500780,
+          "w": 61,
+          "h": 51,
+          "image": {
+            "file": "images/elem_05_day_name_00.png",
+            "raw_cache": "raw_blobs/elem_05_day_name_00.rle",
+            "png_sha256": "5210202e11748b6c15835ce2bcb5b2cad0d8181c2d7e6806d2091d87f50ebea6",
+            "orig_offset": 500780,
+            "w": 61,
+            "h": 51
+          }
+        },
+        {
+          "rel_offset": 15,
+          "offset": 503612,
+          "w": 61,
+          "h": 51,
+          "image": {
+            "file": "images/elem_05_day_name_01.png",
+            "raw_cache": "raw_blobs/elem_05_day_name_01.rle",
+            "png_sha256": "9bbed8a7837b8d1cbfe66955aa8c5c8aad3d155c5268892aa37a0f76608161dc",
+            "orig_offset": 503612,
+            "w": 61,
+            "h": 51
+          }
+        },
+        {
+          "rel_offset": 23,
+          "offset": 507156,
+          "w": 61,
+          "h": 51,
+          "image": {
+            "file": "images/elem_05_day_name_02.png",
+            "raw_cache": "raw_blobs/elem_05_day_name_02.rle",
+            "png_sha256": "915c212805378638555238d6edb74fda0cb1427a7ff54f0bfe51ca92ef266f14",
+            "orig_offset": 507156,
+            "w": 61,
+            "h": 51
+          }
+        },
+        {
+          "rel_offset": 31,
+          "offset": 509380,
+          "w": 61,
+          "h": 51,
+          "image": {
+            "file": "images/elem_05_day_name_03.png",
+            "raw_cache": "raw_blobs/elem_05_day_name_03.rle",
+            "png_sha256": "872268f289acc0aed476cb89e060cf8caeb207c323013bb2043f963949d23c73",
+            "orig_offset": 509380,
+            "w": 61,
+            "h": 51
+          }
+        },
+        {
+          "rel_offset": 39,
+          "offset": 512344,
+          "w": 61,
+          "h": 51,
+          "image": {
+            "file": "images/elem_05_day_name_04.png",
+            "raw_cache": "raw_blobs/elem_05_day_name_04.rle",
+            "png_sha256": "6f80a8749c43ec1c1cf05fdbc4f4506f6f955f881558073d6a72dacc51e1691f",
+            "orig_offset": 512344,
+            "w": 61,
+            "h": 51
+          }
+        },
+        {
+          "rel_offset": 47,
+          "offset": 514800,
+          "w": 61,
+          "h": 51,
+          "image": {
+            "file": "images/elem_05_day_name_05.png",
+            "raw_cache": "raw_blobs/elem_05_day_name_05.rle",
+            "png_sha256": "6bfa75ad33c90597c0c8d2aea72314113582c56ee0cc51b55cd17c8a7abfa293",
+            "orig_offset": 514800,
+            "w": 61,
+            "h": 51
+          }
+        },
+        {
+          "rel_offset": 55,
+          "offset": 516824,
+          "w": 61,
+          "h": 51,
+          "image": {
+            "file": "images/elem_05_day_name_06.png",
+            "raw_cache": "raw_blobs/elem_05_day_name_06.rle",
+            "png_sha256": "e68ae888cd41d9d693985aaea24cbe738915488aa09064ba2a6251dd837374c5",
+            "orig_offset": 516824,
+            "w": 61,
+            "h": 51
+          }
+        }
+      ]
+    },
+    {
+      "e_type": 7,
+      "name": "steps_num",
+      "size": 26,
+      "raw_hex": "01070302a1002801000000000000000000000000000000000000",
+      "owhs": [],
+      "digit_set": 3,
+      "align": 2,
+      "x": 161,
+      "y": 296
+    },
+    {
+      "e_type": 35,
+      "name": "dash",
+      "size": 10,
+      "raw_hex": "0123b40908000d001f00",
+      "owhs": [
+        {
+          "rel_offset": 2,
+          "offset": 526772,
+          "w": 13,
+          "h": 31,
+          "image": {
+            "file": "images/elem_07_dash_00.png",
+            "raw_cache": "raw_blobs/elem_07_dash_00.rle",
+            "png_sha256": "f2c4a5eb3e64b0821703365617a4c76c8e9f1efcb52b923445c4d3ee740c23b9",
+            "orig_offset": 526772,
+            "w": 13,
+            "h": 31
+          }
+        }
+      ]
+    },
+    {
+      "e_type": 6,
+      "name": "heart_rate_num",
+      "size": 26,
+      "raw_hex": "0106030261012801000000000000000000000000000000000000",
+      "owhs": [],
+      "digit_set": 3,
+      "align": 2,
+      "x": 353,
+      "y": 296
+    },
+    {
+      "e_type": 18,
+      "name": "bar_display",
+      "size": 96,
+      "raw_hex": "0112060b8a007701ac0a0800be001e00241c0800be001e009c2d0800be001e00143f0800be001e008c500800be001e0004620800be001e007c730800be001e00f4840800be001e006c960800be001e00e4a70800be001e005cb90800be001e00",
+      "owhs": [
+        {
+          "rel_offset": 8,
+          "offset": 527020,
+          "w": 190,
+          "h": 30,
+          "image": {
+            "file": "images/elem_09_bar_display_00.png",
+            "raw_cache": "raw_blobs/elem_09_bar_display_00.rle",
+            "png_sha256": "b45be12e67b3539be2dd9a5cbd0cbd182b8c575df72fb4d7cf3858225c636fcc",
+            "orig_offset": 527020,
+            "w": 190,
+            "h": 30
+          }
+        },
+        {
+          "rel_offset": 16,
+          "offset": 531492,
+          "w": 190,
+          "h": 30,
+          "image": {
+            "file": "images/elem_09_bar_display_01.png",
+            "raw_cache": "raw_blobs/elem_09_bar_display_01.rle",
+            "png_sha256": "3b3f704a783d1e8823e1f5a7e844240d2bbc658e359682485f222a1228c3dcf0",
+            "orig_offset": 531492,
+            "w": 190,
+            "h": 30
+          }
+        },
+        {
+          "rel_offset": 24,
+          "offset": 535964,
+          "w": 190,
+          "h": 30,
+          "image": {
+            "file": "images/elem_09_bar_display_02.png",
+            "raw_cache": "raw_blobs/elem_09_bar_display_02.rle",
+            "png_sha256": "0821f4bbf210f0c9e8e1f2824be2930fa016bc5f6926e3848888822910ad7c2f",
+            "orig_offset": 535964,
+            "w": 190,
+            "h": 30
+          }
+        },
+        {
+          "rel_offset": 32,
+          "offset": 540436,
+          "w": 190,
+          "h": 30,
+          "image": {
+            "file": "images/elem_09_bar_display_03.png",
+            "raw_cache": "raw_blobs/elem_09_bar_display_03.rle",
+            "png_sha256": "9ae75f9f7a54d95c8f7567a67cac2727934e9663d0c6db8a9d285309edddf2c4",
+            "orig_offset": 540436,
+            "w": 190,
+            "h": 30
+          }
+        },
+        {
+          "rel_offset": 40,
+          "offset": 544908,
+          "w": 190,
+          "h": 30,
+          "image": {
+            "file": "images/elem_09_bar_display_04.png",
+            "raw_cache": "raw_blobs/elem_09_bar_display_04.rle",
+            "png_sha256": "e9afbab4ead8d5f6a0333746114a2c13c523748d45305a3d12cfabd0af9d4162",
+            "orig_offset": 544908,
+            "w": 190,
+            "h": 30
+          }
+        },
+        {
+          "rel_offset": 48,
+          "offset": 549380,
+          "w": 190,
+          "h": 30,
+          "image": {
+            "file": "images/elem_09_bar_display_05.png",
+            "raw_cache": "raw_blobs/elem_09_bar_display_05.rle",
+            "png_sha256": "626e91be0a097c2df2ad8e52f71fbced2bacadda2b537468f9ed8fc43e6a12e0",
+            "orig_offset": 549380,
+            "w": 190,
+            "h": 30
+          }
+        },
+        {
+          "rel_offset": 56,
+          "offset": 553852,
+          "w": 190,
+          "h": 30,
+          "image": {
+            "file": "images/elem_09_bar_display_06.png",
+            "raw_cache": "raw_blobs/elem_09_bar_display_06.rle",
+            "png_sha256": "0925ef22b2ad406d4990be69758f482b66c8bac174b94df14cf04c061707e49c",
+            "orig_offset": 553852,
+            "w": 190,
+            "h": 30
+          }
+        },
+        {
+          "rel_offset": 64,
+          "offset": 558324,
+          "w": 190,
+          "h": 30,
+          "image": {
+            "file": "images/elem_09_bar_display_07.png",
+            "raw_cache": "raw_blobs/elem_09_bar_display_07.rle",
+            "png_sha256": "a1c0d46945ce598550736955acaf2c93576e9162bfd661552b9e74c08194d2ec",
+            "orig_offset": 558324,
+            "w": 190,
+            "h": 30
+          }
+        },
+        {
+          "rel_offset": 72,
+          "offset": 562796,
+          "w": 190,
+          "h": 30,
+          "image": {
+            "file": "images/elem_09_bar_display_08.png",
+            "raw_cache": "raw_blobs/elem_09_bar_display_08.rle",
+            "png_sha256": "8784e7e22c73c70c329bde3813c5a4c9ded6da90fa1498b1b010f02dc8eaf810",
+            "orig_offset": 562796,
+            "w": 190,
+            "h": 30
+          }
+        },
+        {
+          "rel_offset": 80,
+          "offset": 567268,
+          "w": 190,
+          "h": 30,
+          "image": {
+            "file": "images/elem_09_bar_display_09.png",
+            "raw_cache": "raw_blobs/elem_09_bar_display_09.rle",
+            "png_sha256": "2c5d241e81c972d67a4c2b0cf10af9cbb3f179bf8fbe9dc732069223d194903a",
+            "orig_offset": 567268,
+            "w": 190,
+            "h": 30
+          }
+        },
+        {
+          "rel_offset": 88,
+          "offset": 571740,
+          "w": 190,
+          "h": 30,
+          "image": {
+            "file": "images/elem_09_bar_display_10.png",
+            "raw_cache": "raw_blobs/elem_09_bar_display_10.rle",
+            "png_sha256": "e6879472d2dae96db80beec9dfdce2884960769a03a0a79382eb42ff24c16955",
+            "orig_offset": 571740,
+            "w": 190,
+            "h": 30
+          }
+        }
+      ]
+    }
+  ]
+}

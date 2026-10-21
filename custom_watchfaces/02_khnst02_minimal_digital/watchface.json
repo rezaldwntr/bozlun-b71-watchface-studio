@@ -1,0 +1,692 @@
+{
+  "format": "watchface_bin",
+  "file_size": 0,
+  "api_ver": 35,
+  "unknown": 65535,
+  "preview": {
+    "offset": 0,
+    "w": 280,
+    "h": 280,
+    "image": {
+      "file": "images/preview.png",
+      "w": 280,
+      "h": 280
+    }
+  },
+  "d_offset": 16,
+  "e_offset": 267,
+  "digit_sets": [
+    {
+      "digit_set_id": 0,
+      "unknown": 257,
+      "glyphs": [
+        {
+          "offset": 0,
+          "w": 46,
+          "h": 59,
+          "image": {
+            "file": "images/digits_00_0.png",
+            "w": 46,
+            "h": 59
+          }
+        },
+        {
+          "offset": 0,
+          "w": 46,
+          "h": 59,
+          "image": {
+            "file": "images/digits_00_1.png",
+            "w": 46,
+            "h": 59
+          }
+        },
+        {
+          "offset": 0,
+          "w": 46,
+          "h": 59,
+          "image": {
+            "file": "images/digits_00_2.png",
+            "w": 46,
+            "h": 59
+          }
+        },
+        {
+          "offset": 0,
+          "w": 46,
+          "h": 59,
+          "image": {
+            "file": "images/digits_00_3.png",
+            "w": 46,
+            "h": 59
+          }
+        },
+        {
+          "offset": 0,
+          "w": 46,
+          "h": 59,
+          "image": {
+            "file": "images/digits_00_4.png",
+            "w": 46,
+            "h": 59
+          }
+        },
+        {
+          "offset": 0,
+          "w": 46,
+          "h": 59,
+          "image": {
+            "file": "images/digits_00_5.png",
+            "w": 46,
+            "h": 59
+          }
+        },
+        {
+          "offset": 0,
+          "w": 46,
+          "h": 59,
+          "image": {
+            "file": "images/digits_00_6.png",
+            "w": 46,
+            "h": 59
+          }
+        },
+        {
+          "offset": 0,
+          "w": 46,
+          "h": 59,
+          "image": {
+            "file": "images/digits_00_7.png",
+            "w": 46,
+            "h": 59
+          }
+        },
+        {
+          "offset": 0,
+          "w": 46,
+          "h": 59,
+          "image": {
+            "file": "images/digits_00_8.png",
+            "w": 46,
+            "h": 59
+          }
+        },
+        {
+          "offset": 0,
+          "w": 46,
+          "h": 59,
+          "image": {
+            "file": "images/digits_00_9.png",
+            "w": 46,
+            "h": 59
+          }
+        }
+      ]
+    },
+    {
+      "digit_set_id": 1,
+      "unknown": 257,
+      "glyphs": [
+        {
+          "offset": 0,
+          "w": 15,
+          "h": 18,
+          "image": {
+            "file": "images/digits_01_0.png",
+            "w": 15,
+            "h": 18
+          }
+        },
+        {
+          "offset": 0,
+          "w": 15,
+          "h": 18,
+          "image": {
+            "file": "images/digits_01_1.png",
+            "w": 15,
+            "h": 18
+          }
+        },
+        {
+          "offset": 0,
+          "w": 15,
+          "h": 18,
+          "image": {
+            "file": "images/digits_01_2.png",
+            "w": 15,
+            "h": 18
+          }
+        },
+        {
+          "offset": 0,
+          "w": 15,
+          "h": 18,
+          "image": {
+            "file": "images/digits_01_3.png",
+            "w": 15,
+            "h": 18
+          }
+        },
+        {
+          "offset": 0,
+          "w": 15,
+          "h": 18,
+          "image": {
+            "file": "images/digits_01_4.png",
+            "w": 15,
+            "h": 18
+          }
+        },
+        {
+          "offset": 0,
+          "w": 15,
+          "h": 18,
+          "image": {
+            "file": "images/digits_01_5.png",
+            "w": 15,
+            "h": 18
+          }
+        },
+        {
+          "offset": 0,
+          "w": 15,
+          "h": 18,
+          "image": {
+            "file": "images/digits_01_6.png",
+            "w": 15,
+            "h": 18
+          }
+        },
+        {
+          "offset": 0,
+          "w": 15,
+          "h": 18,
+          "image": {
+            "file": "images/digits_01_7.png",
+            "w": 15,
+            "h": 18
+          }
+        },
+        {
+          "offset": 0,
+          "w": 15,
+          "h": 18,
+          "image": {
+            "file": "images/digits_01_8.png",
+            "w": 15,
+            "h": 18
+          }
+        },
+        {
+          "offset": 0,
+          "w": 15,
+          "h": 18,
+          "image": {
+            "file": "images/digits_01_9.png",
+            "w": 15,
+            "h": 18
+          }
+        }
+      ]
+    },
+    {
+      "digit_set_id": 2,
+      "unknown": 257,
+      "glyphs": [
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 14,
+          "image": {
+            "file": "images/digits_02_0.png",
+            "w": 13,
+            "h": 14
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 14,
+          "image": {
+            "file": "images/digits_02_1.png",
+            "w": 13,
+            "h": 14
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 14,
+          "image": {
+            "file": "images/digits_02_2.png",
+            "w": 13,
+            "h": 14
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 14,
+          "image": {
+            "file": "images/digits_02_3.png",
+            "w": 13,
+            "h": 14
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 14,
+          "image": {
+            "file": "images/digits_02_4.png",
+            "w": 13,
+            "h": 14
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 14,
+          "image": {
+            "file": "images/digits_02_5.png",
+            "w": 13,
+            "h": 14
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 14,
+          "image": {
+            "file": "images/digits_02_6.png",
+            "w": 13,
+            "h": 14
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 14,
+          "image": {
+            "file": "images/digits_02_7.png",
+            "w": 13,
+            "h": 14
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 14,
+          "image": {
+            "file": "images/digits_02_8.png",
+            "w": 13,
+            "h": 14
+          }
+        },
+        {
+          "offset": 0,
+          "w": 13,
+          "h": 14,
+          "image": {
+            "file": "images/digits_02_9.png",
+            "w": 13,
+            "h": 14
+          }
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "e_type": 0,
+      "name": "image",
+      "size": 14,
+      "raw_hex": "01000000000000000000d201d201",
+      "owhs": [
+        {
+          "rel_offset": 6,
+          "offset": 0,
+          "w": 466,
+          "h": 466,
+          "image": {
+            "file": "images/elem_00_image_00.png",
+            "w": 466,
+            "h": 466
+          }
+        }
+      ],
+      "x": 0,
+      "y": 0
+    },
+    {
+      "e_type": 2,
+      "name": "time_num",
+      "size": 34,
+      "raw_hex": "0102000000007600ac00a800ac00f800ac002a01ac00000000000000000000000000",
+      "owhs": [],
+      "digit_sets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "coords": [
+        {
+          "x": 118,
+          "y": 172
+        },
+        {
+          "x": 168,
+          "y": 172
+        },
+        {
+          "x": 248,
+          "y": 172
+        },
+        {
+          "x": 298,
+          "y": 172
+        }
+      ]
+    },
+    {
+      "e_type": 4,
+      "name": "day_name",
+      "size": 63,
+      "raw_hex": "0104019b0086000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "owhs": [
+        {
+          "rel_offset": 7,
+          "offset": 0,
+          "w": 52,
+          "h": 18,
+          "image": {
+            "file": "images/elem_02_day_name_00.png",
+            "w": 52,
+            "h": 18
+          }
+        },
+        {
+          "rel_offset": 15,
+          "offset": 0,
+          "w": 52,
+          "h": 18,
+          "image": {
+            "file": "images/elem_02_day_name_01.png",
+            "w": 52,
+            "h": 18
+          }
+        },
+        {
+          "rel_offset": 23,
+          "offset": 0,
+          "w": 52,
+          "h": 18,
+          "image": {
+            "file": "images/elem_02_day_name_02.png",
+            "w": 52,
+            "h": 18
+          }
+        },
+        {
+          "rel_offset": 31,
+          "offset": 0,
+          "w": 52,
+          "h": 18,
+          "image": {
+            "file": "images/elem_02_day_name_03.png",
+            "w": 52,
+            "h": 18
+          }
+        },
+        {
+          "rel_offset": 39,
+          "offset": 0,
+          "w": 52,
+          "h": 18,
+          "image": {
+            "file": "images/elem_02_day_name_04.png",
+            "w": 52,
+            "h": 18
+          }
+        },
+        {
+          "rel_offset": 47,
+          "offset": 0,
+          "w": 52,
+          "h": 18,
+          "image": {
+            "file": "images/elem_02_day_name_05.png",
+            "w": 52,
+            "h": 18
+          }
+        },
+        {
+          "rel_offset": 55,
+          "offset": 0,
+          "w": 52,
+          "h": 18,
+          "image": {
+            "file": "images/elem_02_day_name_06.png",
+            "w": 52,
+            "h": 18
+          }
+        }
+      ],
+      "x": 155,
+      "y": 134
+    },
+    {
+      "e_type": 13,
+      "name": "day_num",
+      "size": 12,
+      "raw_hex": "010d0102de008600ea008600",
+      "owhs": [],
+      "digit_set": 1,
+      "align": 2,
+      "coords": [
+        {
+          "x": 222,
+          "y": 134
+        },
+        {
+          "x": 234,
+          "y": 134
+        }
+      ]
+    },
+    {
+      "e_type": 15,
+      "name": "month_num",
+      "size": 12,
+      "raw_hex": "010f0102fe0086000a018600",
+      "owhs": [],
+      "digit_set": 1,
+      "align": 2,
+      "coords": [
+        {
+          "x": 254,
+          "y": 134
+        },
+        {
+          "x": 266,
+          "y": 134
+        }
+      ]
+    },
+    {
+      "e_type": 7,
+      "name": "steps_num",
+      "size": 26,
+      "raw_hex": "0107020031011001000000000000000000000000000000000000",
+      "owhs": [],
+      "digit_set": 2,
+      "align": 0,
+      "x": 305,
+      "y": 272
+    },
+    {
+      "e_type": 6,
+      "name": "heart_rate_num",
+      "size": 26,
+      "raw_hex": "0106020031012e01000000000000000000000000000000000000",
+      "owhs": [],
+      "digit_set": 2,
+      "align": 0,
+      "x": 305,
+      "y": 302
+    },
+    {
+      "e_type": 9,
+      "name": "kcal_num",
+      "size": 17,
+      "raw_hex": "0109020031014c01000000000000000000",
+      "owhs": [],
+      "digit_set": 2,
+      "align": 0,
+      "x": 305,
+      "y": 332
+    },
+    {
+      "e_type": 8,
+      "name": "distance_num",
+      "size": 26,
+      "raw_hex": "0108020031016a01000000000000000000000000000000000000",
+      "owhs": [],
+      "digit_set": 2,
+      "align": 0,
+      "x": 305,
+      "y": 362
+    },
+    {
+      "e_type": 18,
+      "name": "bar_display",
+      "size": 96,
+      "raw_hex": "0112060be400600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "owhs": [
+        {
+          "rel_offset": 8,
+          "offset": 0,
+          "w": 48,
+          "h": 16,
+          "image": {
+            "file": "images/elem_09_bar_display_00.png",
+            "w": 48,
+            "h": 16
+          }
+        },
+        {
+          "rel_offset": 16,
+          "offset": 0,
+          "w": 48,
+          "h": 16,
+          "image": {
+            "file": "images/elem_09_bar_display_01.png",
+            "w": 48,
+            "h": 16
+          }
+        },
+        {
+          "rel_offset": 24,
+          "offset": 0,
+          "w": 48,
+          "h": 16,
+          "image": {
+            "file": "images/elem_09_bar_display_02.png",
+            "w": 48,
+            "h": 16
+          }
+        },
+        {
+          "rel_offset": 32,
+          "offset": 0,
+          "w": 48,
+          "h": 16,
+          "image": {
+            "file": "images/elem_09_bar_display_03.png",
+            "w": 48,
+            "h": 16
+          }
+        },
+        {
+          "rel_offset": 40,
+          "offset": 0,
+          "w": 48,
+          "h": 16,
+          "image": {
+            "file": "images/elem_09_bar_display_04.png",
+            "w": 48,
+            "h": 16
+          }
+        },
+        {
+          "rel_offset": 48,
+          "offset": 0,
+          "w": 48,
+          "h": 16,
+          "image": {
+            "file": "images/elem_09_bar_display_05.png",
+            "w": 48,
+            "h": 16
+          }
+        },
+        {
+          "rel_offset": 56,
+          "offset": 0,
+          "w": 48,
+          "h": 16,
+          "image": {
+            "file": "images/elem_09_bar_display_06.png",
+            "w": 48,
+            "h": 16
+          }
+        },
+        {
+          "rel_offset": 64,
+          "offset": 0,
+          "w": 48,
+          "h": 16,
+          "image": {
+            "file": "images/elem_09_bar_display_07.png",
+            "w": 48,
+            "h": 16
+          }
+        },
+        {
+          "rel_offset": 72,
+          "offset": 0,
+          "w": 48,
+          "h": 16,
+          "image": {
+            "file": "images/elem_09_bar_display_08.png",
+            "w": 48,
+            "h": 16
+          }
+        },
+        {
+          "rel_offset": 80,
+          "offset": 0,
+          "w": 48,
+          "h": 16,
+          "image": {
+            "file": "images/elem_09_bar_display_09.png",
+            "w": 48,
+            "h": 16
+          }
+        },
+        {
+          "rel_offset": 88,
+          "offset": 0,
+          "w": 48,
+          "h": 16,
+          "image": {
+            "file": "images/elem_09_bar_display_10.png",
+            "w": 48,
+            "h": 16
+          }
+        }
+      ],
+      "x": 228,
+      "y": 96
+    }
+  ]
+}

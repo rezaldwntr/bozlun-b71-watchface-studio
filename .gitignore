@@ -1,0 +1,35 @@
+# Large binary archives (>50MB / GitHub limits)
+*.zip
+*.apk
+tools/platform-tools/
+tools/jadx/
+tools/jdk/
+tools/platform-tools.zip
+tools/jadx.zip
+tools/jdk17.zip
+apk/dafit.apk
+apk/config_decrypted.json
+apk/init_settings_*
+
+# Local SSL certificates & private keys
+web_app/ssl/
+*.pem
+*.key
+
+# Python & Environment
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+
+# Scratch & Temporary Logs
+scratch/
+*.log
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
