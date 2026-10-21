@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#0a0d14">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Bozlun Studio">
+  <title>Bozlun B71 Watchface Studio</title>
+  
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="icons/favicon.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top App Bar -->
+  <header class="app-header">
+    <div class="header-content">
+      <div class="brand">
+        <img src="icons/icon-192.png" alt="Logo" class="brand-icon">
+        <div>
+          <span class="brand-title">Bozlun B71 Studio</span>
+          <span class="brand-badge">PWA BLE</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Device Card -->
+    <section class="device-card" id="deviceCard">
+      <div class="device-info">
+        <div class="device-icon-wrap">
+          <svg class="icon" style="width: 26px; height: 26px;" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12 2C9.24 2 7 4.24 7 7v1.08C5.22 9.07 4 10.9 4 13c0 2.1 1.22 3.93 3 4.92V19c0 2.76 2.24 5 5 5s5-2.24 5-5v-1.08c1.78-.99 3-2.82 3-4.92 0-2.1-1.22-3.93-3-4.92V7c0-2.76-2.24-5-5-5zm0 18c-1.65 0-3-1.35-3-3v-.16c.92.51 1.93.81 3 .81s2.08-.3 3-.81V17c0 1.65-1.35 3-3 3zm0-16c1.65 0 3 1.35 3 3v.16c-.92-.51-1.93-.81-3-.81s-2.08.3-3 .81V7c0-1.65 1.35-3 3-3zm0 13c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="device-name" id="deviceName">Bozlun B71</div>
+          <div class="device-status" id="deviceStatus">Belum terhubung</div>
+          <div class="battery-badge" id="batteryBadge">
+            <svg class="icon" style="width: 14px; height: 14px;" viewBox="0 0 24 24"><path fill="currentColor" d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM11 20v-5.5H9L13 7v5.5h2L11 20z"/></svg>
+            <span id="batteryLevel">--%</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button class="btn btn-primary btn-sm" id="btnConnect">
+          <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M17.71 7.71L12 2h-1v7.59L6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 11 14.41V22h1l5.71-5.71-4.3-4.29 4.3-4.29zM13 5.83l1.88 1.88L13 9.59V5.83zm1.88 10.46L13 18.17v-3.76l1.88 1.88z"/></svg>
+          Hubungkan
+        </button>
+        <button class="btn btn-outline btn-sm" id="btnDisconnect" style="display: none;">
+          Putuskan
+        </button>
+      </div>
+    </section>
+
+    <!-- Scan Option & Troubleshooting Help -->
+    <div style="margin-top: -14px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; font-size: 0.8rem; color: var(--text-secondary);">
+      <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+        <input type="checkbox" id="chkScanAll" style="accent-color: var(--accent-cyan); width: 16px; height: 16px;">
+        <span>Cari semua perangkat Bluetooth (tanpa filter nama)</span>
+      </label>
+    </div>
+
+    <!-- Troubleshooting Tips Box -->
+    <div class="notice-box" style="margin-top: 0; margin-bottom: 20px; border-color: rgba(255, 145, 0, 0.3); background: rgba(255, 145, 0, 0.05);">
+      <div class="notice-icon" style="color: var(--accent-orange);">
+        <svg class="icon" style="width: 22px; height: 22px;" viewBox="0 0 24 24"><path fill="currentColor" d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+      </div>
+      <div>
+        <strong style="color: #ffb74d;">Jika Gagal Menghubungkan ke Jam:</strong>
+        <ol style="margin-top: 6px; padding-left: 18px; line-height: 1.5;">
+          <li><strong>Tutup aplikasi Da Fit di HP</strong>: Jam tangan BLE hanya bisa terhubung ke 1 aplikasi. Jika Da Fit aktif di latar belakang, Da Fit mengunci koneksi dan browser akan ditolak. Tutup/keluarkan Da Fit terlebih dahulu.</li>
+          <li><strong>Nyalakan GPS / Izin Lokasi</strong>: Sistem Android mewajibkan GPS/Lokasi aktif untuk memindai perangkat Bluetooth Low Energy.</li>
+          <li><strong>Centang "Cari semua perangkat"</strong> di atas jika nama <em>B71</em> tidak muncul di daftar pencarian Chrome.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Quick Actions Toolbar -->
+    <div class="quick-toolbar">
+      <button class="btn btn-outline" id="btnSyncTime" disabled>
+        <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+        Sinkron Jam HP
+      </button>
+      <button class="btn btn-outline" id="btnUploadCustom">
+        <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"/></svg>
+        Pilih .bin Sendiri
+      </button>
+      <input type="file" id="fileInput" accept=".bin" style="display: none;">
+    </div>
+
+    <!-- Watchface Catalog -->
+    <div class="section-header">
+      <div>
+        <h2 class="section-title">Koleksi Watchface</h2>
+        <p class="section-desc">Pilih watchface dan ketuk Flash untuk memasang ke jam tangan</p>
+      </div>
+    </div>
+
+    <div class="gallery-grid" id="galleryContainer">
+      <!-- Generated dynamically by app.js -->
+    </div>
+
+    <!-- Security & Office Attendance Notice -->
+    <div class="notice-box">
+      <div class="notice-icon">
+        <svg class="icon" style="width: 22px; height: 22px;" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+        </svg>
+      </div>
+      <div>
+        <strong>100% Aman untuk Aplikasi Absensi Kantor:</strong>
+        <p style="margin-top: 4px;">Aplikasi ini berjalan murni melalui Web Bluetooth di Google Chrome HP. <strong>TIDAK membutuhkan Opsi Pengembang (Developer Options), TIDAK membutuhkan USB Debugging, dan TIDAK membutuhkan Root</strong>, sehingga aman dari deteksi sistem absensi kantor.</p>
+        <p style="margin-top: 6px; color: var(--accent-cyan);">💡 <em>Tip: Ketuk menu titik tiga (⋮) di Chrome lalu pilih <strong>"Tambahkan ke Layar Utama" (Add to Home screen)</strong> agar menjadi aplikasi mandiri di HP Anda.</em></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Progress Modal -->
+  <div class="modal-overlay" id="progressModal">
+    <div class="modal-content">
+      <div class="progress-ring-container">
+        <svg class="progress-ring-svg">
+          <circle class="progress-ring-bg" stroke-width="10" fill="transparent" r="68" cx="80" cy="80" />
+          <circle id="progressCircle" class="progress-ring-bar" stroke-width="10" stroke-linecap="round" fill="transparent" r="68" cx="80" cy="80" stroke-dasharray="427.26" stroke-dashoffset="427.26" />
+        </svg>
+        <div class="progress-center-text">
+          <span class="progress-percent" id="progressPercent">0%</span>
+          <span class="progress-speed" id="progressSpeed">0 KB/s</span>
+        </div>
+      </div>
+      <div class="progress-status" id="progressStatus">Mengirim Data...</div>
+      <div class="progress-substatus" id="progressSubstatus">Jangan menjauhkan jam tangan</div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">Notifikasi</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
