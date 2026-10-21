@@ -32,11 +32,11 @@ const WATCHFACE_CATALOG = [
     id: 'khnst02_digital',
     faceId: 14698,
     title: 'KHNST02 Minimal Digital',
-    subtitle: 'Modern Clean Digital • Tipis & Elegan',
+    subtitle: 'Revisi 1:1 Presisi • 5-Dot Baterai + %',
     file: 'watchfaces/khnst02_digital.bin',
     preview: 'previews/khnst02_digital.png',
-    badge: 'Favorit',
-    desc: 'Tata letak digital minimalis ultra-bersih dengan font modern tipis, ringkas, dan baterai bar horizontal.'
+    badge: 'Revisi 1:1',
+    desc: 'Desain digital modern ultra-bersih hasil revisi 1:1 sesuai referensi: 5 dot kapsul baterai + persentase dinamis, jam bold tebal, SUN 23.09, dan 4 metrik fitness sejajar presisi.'
   },
   {
     id: 'roman_analog',
