@@ -5,11 +5,15 @@
  */
 
 // BLE UUIDs for MoYoung / JieLi OTA
+const UUID_SERVICE_FEEA = '0000feea-0000-1000-8000-00805f9b34fb'; // Primary MoYoung/JieLi Service containing FEE1..FEE6
 const UUID_SERVICE_FEE1 = '0000fee1-0000-1000-8000-00805f9b34fb';
+const UUID_SERVICE_FEE7 = '0000fee7-0000-1000-8000-00805f9b34fb';
+const UUID_BATTERY_SVC  = '0000180f-0000-1000-8000-00805f9b34fb';
+
+const UUID_FEE1         = '0000fee1-0000-1000-8000-00805f9b34fb';
 const UUID_FEE2         = '0000fee2-0000-1000-8000-00805f9b34fb'; // TX Control (Write Without Response)
 const UUID_FEE3         = '0000fee3-0000-1000-8000-00805f9b34fb'; // RX Notify
 const UUID_FEE6         = '0000fee6-0000-1000-8000-00805f9b34fb'; // OTA Data Stream (Write Without Response)
-const UUID_BATTERY_SVC  = '0000180f-0000-1000-8000-00805f9b34fb';
 const UUID_BATTERY_CHR  = '00002a19-0000-1000-8000-00805f9b34fb';
 
 // Built-in Watchface Catalog
@@ -239,37 +243,29 @@ function checkBluetoothSupport() {
   return true;
 }
 
-// Connect to Watch via Web Bluetooth
-async function connectBluetooth(scanAll = false) {
+// Connect to Watch via Web Bluetooth (Strictly locked to B71)
+async function connectBluetooth() {
   if (!checkBluetoothSupport()) return;
-
-  const chkScanAll = document.getElementById('chkScanAll');
-  const shouldScanAll = scanAll || (chkScanAll && chkScanAll.checked);
 
   try {
     deviceStatusEl.textContent = 'Mencari jam Bozlun B71...';
-    showToast(shouldScanAll ? 'Mencari semua perangkat Bluetooth...' : 'Mencari Bozlun B71...', 'info');
+    showToast('Mencari jam Bozlun B71...', 'info');
 
-    const options = shouldScanAll ? {
-      acceptAllDevices: true,
-      optionalServices: [
-        UUID_SERVICE_FEE1,
-        '0000fee7-0000-1000-8000-00805f9b34fb',
-        UUID_BATTERY_SVC
-      ]
-    } : {
+    const options = {
       filters: [
+        { name: 'B71' },
         { namePrefix: 'B71' },
-        { namePrefix: 'b71' },
-        { namePrefix: 'MOY' },
-        { namePrefix: 'Moy' },
-        { namePrefix: 'moy' },
-        { services: [UUID_SERVICE_FEE1] }
+        { name: 'b71' },
+        { namePrefix: 'b71' }
       ],
       optionalServices: [
+        UUID_SERVICE_FEEA,
         UUID_SERVICE_FEE1,
-        '0000fee7-0000-1000-8000-00805f9b34fb',
-        UUID_BATTERY_SVC
+        UUID_SERVICE_FEE7,
+        UUID_BATTERY_SVC,
+        '0000180a-0000-1000-8000-00805f9b34fb',
+        '0000190e-0000-1000-8000-00805f9b34fb',
+        '0000ae00-0000-1000-8000-00805f9b34fb'
       ]
     };
 
@@ -285,18 +281,34 @@ async function connectBluetooth(scanAll = false) {
       throw new Error('Gagal konek! Kemungkinan jam sedang dikunci oleh aplikasi Da Fit di HP. Harap TUTUP/KELUARKAN aplikasi Da Fit terlebih dahulu, lalu coba lagi.');
     }
 
-    deviceStatusEl.textContent = 'Mengambil Service OTA (FEE1)...';
-    let serviceFee1 = null;
-    try {
-      serviceFee1 = await gattServer.getPrimaryService(UUID_SERVICE_FEE1);
-    } catch (svcErr) {
-      console.warn('FEE1 not found, trying FEE7 fallback...', svcErr);
-      serviceFee1 = await gattServer.getPrimaryService('0000fee7-0000-1000-8000-00805f9b34fb');
+    deviceStatusEl.textContent = 'Mencari Layanan Komunikasi OTA...';
+    let serviceOta = null;
+    const candidateServices = [
+      UUID_SERVICE_FEEA,
+      UUID_SERVICE_FEE1,
+      UUID_SERVICE_FEE7
+    ];
+
+    for (const sUuid of candidateServices) {
+      try {
+        serviceOta = await gattServer.getPrimaryService(sUuid);
+        if (serviceOta) {
+          console.log(`[BLE] Primary service ditemukan: ${sUuid}`);
+          break;
+        }
+      } catch (e) {
+        console.warn(`[BLE] Service ${sUuid} tidak ditemukan di perangkat:`, e);
+      }
     }
 
-    charFee2 = await serviceFee1.getCharacteristic(UUID_FEE2);
-    charFee3 = await serviceFee1.getCharacteristic(UUID_FEE3);
-    charFee6 = await serviceFee1.getCharacteristic(UUID_FEE6);
+    if (!serviceOta) {
+      throw new Error('Layanan OTA (FEEA) tidak ditemukan pada jam tangan.');
+    }
+
+    deviceStatusEl.textContent = 'Mempersiapkan Karakteristik OTA...';
+    charFee2 = await serviceOta.getCharacteristic(UUID_FEE2);
+    charFee3 = await serviceOta.getCharacteristic(UUID_FEE3);
+    charFee6 = await serviceOta.getCharacteristic(UUID_FEE6);
 
     // Subscribe to notifications on FEE3
     await charFee3.startNotifications();
@@ -326,7 +338,11 @@ async function connectBluetooth(scanAll = false) {
   } catch (err) {
     console.error('Bluetooth connection error:', err);
     if (err.name === 'NotFoundError') {
-      showToast('Pencarian dibatalkan atau jam tidak terlihat. Centang "Scan Semua Perangkat".', 'warning');
+      if (err.message && err.message.toLowerCase().includes('user cancelled')) {
+        showToast('Pencarian dibatalkan oleh pengguna.', 'warning');
+      } else {
+        showToast(`Gagal membaca layanan jam: ${err.message}`, 'error');
+      }
     } else {
       showToast(`${err.message}`, 'error');
     }
