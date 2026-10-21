@@ -1,4 +1,4 @@
-const CACHE_NAME = 'b71-flasher-v13';
+const CACHE_NAME = 'b71-flasher-v14';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -8,10 +8,12 @@ const ASSETS_TO_CACHE = [
   './icons/icon-192.png',
   './icons/icon-512.png',
   './icons/favicon.png',
+  './watchfaces/garmin_stacked.bin',
   './watchfaces/casio_retro.bin',
   './watchfaces/lonely_moon.bin',
   './watchfaces/khnst02_digital.bin',
   './watchfaces/roman_analog.bin',
+  './previews/garmin_stacked.png',
   './previews/casio_retro.png',
   './previews/lonely_moon.png',
   './previews/khnst02_digital.png',

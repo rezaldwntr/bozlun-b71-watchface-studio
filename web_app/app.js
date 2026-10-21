@@ -19,6 +19,16 @@ const UUID_BATTERY_CHR  = '00002a19-0000-1000-8000-00805f9b34fb';
 // Built-in Watchface Catalog
 const WATCHFACE_CATALOG = [
   {
+    id: 'garmin_stacked',
+    faceId: 14698,
+    title: 'Garmin Venu 2 Stacked Digital',
+    subtitle: 'Revisi 100% Persis • Dual-Tone Stacked + Cyan Arc',
+    file: 'watchfaces/garmin_stacked.bin',
+    preview: 'previews/garmin_stacked.png',
+    badge: 'Katalog Terbaru',
+    desc: 'Desain digital modern Garmin Venu 2 dengan waktu bertingkat (Jam Putih, Menit Cyan), arc baterai melingkar dinamis, indikator detak jantung, cuaca, dan tapak kaki.'
+  },
+  {
     id: 'casio_retro',
     faceId: 14698,
     title: 'Casio Retro LCD (COROS)',
