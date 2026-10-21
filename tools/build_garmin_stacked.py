@@ -196,8 +196,8 @@ def build_garmin_watchface():
 
     # Bottom Footprints Icon (Cyan)
     cyan_col = (0, 168, 255, 255)
-    foot_x = 176
-    step_y = 373
+    foot_x = 173
+    step_y = 368
     d.ellipse([foot_x, step_y + 2, foot_x + 4, step_y + 8], fill=cyan_col)
     d.ellipse([foot_x + 1, step_y + 10, foot_x + 5, step_y + 13], fill=cyan_col)
     d.ellipse([foot_x + 7, step_y, foot_x + 11, step_y + 6], fill=cyan_col)
@@ -208,11 +208,11 @@ def build_garmin_watchface():
     # ==========================================
     # 2. Digit Sets
     # ==========================================
-    # Time Digits: 148px Barlow-Black
+    # Time Digits: 156px Barlow-Black (100% matched to reference size ~112px ink height)
     # Hours = Pure White (255, 255, 255)
     # Minutes = Electric Cyan (0, 168, 255)
-    _, _, d_h = make_uniform_digit_set(FONT_BARLOW_BLACK, 148, color=(255, 255, 255, 255), pad_w=2, pad_h=4)
-    _, _, d_m = make_uniform_digit_set(FONT_BARLOW_BLACK, 148, color=(0, 168, 255, 255), pad_w=2, pad_h=4)
+    fw_t, fh_t, d_h = make_uniform_digit_set(FONT_BARLOW_BLACK, 156, color=(255, 255, 255, 255), pad_w=2, pad_h=2)
+    _, _, d_m = make_uniform_digit_set(FONT_BARLOW_BLACK, 156, color=(0, 168, 255, 255), pad_w=2, pad_h=2)
 
     # Date Digits: 36px Barlow-Black (White)
     _, _, d_date = make_uniform_digit_set(FONT_BARLOW_BLACK, 36, color=(255, 255, 255, 255), pad_w=2, pad_h=2)
@@ -228,13 +228,16 @@ def build_garmin_watchface():
     # ==========================================
     # 3. Big Stacked Digital Time (Type 2)
     # ==========================================
-    # Hours '09' centered at x=221, y=104
-    # Digit width is ~84px, spacing 6px -> x1 = 135, x2 = 225
-    # Minutes '28' centered at x=227, y=236
-    # Digit width is ~84px, spacing 6px -> x1 = 141, x2 = 231
+    # Hours '09':
+    # H1 at (121, 104) -> ink x=[131..212], y=[105..217]
+    # H2 at (224, 104) -> ink x=[233..313], y=[105..217]
+    # Minutes '28':
+    # M1 at (127, 218) -> ink x=[137..219], y=[219..330]
+    # M2 at (225, 218) -> ink x=[235..316], y=[219..331]
+    # Vertical gap between Hours and Minutes: EXACTLY 2-3 pixels (authentic stacked look)
     b.add_time_num((id_h, id_h, id_m, id_m), [
-        (135, 104), (225, 104),
-        (141, 236), (231, 236)
+        (121, 104), (224, 104),
+        (127, 218), (225, 218)
     ])
 
     # ==========================================
@@ -261,8 +264,9 @@ def build_garmin_watchface():
     # Heart Rate: center x=78, y=222
     b.add_heart_rate_num(id_metric, 60, 222, align=0)
 
-    # Steps Count: center x=244, y=362
-    b.add_steps_num(id_metric, 204, 362, align=0)
+    # Steps Count: perfectly centered with footsteps icon at x=201, y=366
+    # Distance from Minutes bottom (y=331) to Steps top (y=366): 35 pixels (clean breathing room, NO OVERLAP)
+    b.add_steps_num(id_metric, 201, 366, align=0)
 
     # Weather Temperature (Type 28 decor_multi / temp_num): center x=368, y=222
     temp_syms = make_temp_symbols(FONT_BARLOW_BLACK, 32, color=(255, 255, 255, 255))
@@ -276,13 +280,14 @@ def build_garmin_watchface():
     # Paste 75% battery arc frame (frame index 7 or 8)
     preview_im.alpha_composite(bat_frames[7])
 
-    # Draw preview texts matching reference
-    f_time = ImageFont.truetype(FONT_BARLOW_BLACK, 148)
-    pd = ImageDraw.Draw(preview_im)
-    pd.text((135, 104), "09", fill=(255, 255, 255, 255), font=f_time)
-    pd.text((141, 236), "28", fill=(0, 168, 255, 255), font=f_time)
+    # Draw preview digits using identical digit set glyphs for 100% pixel-perfect accuracy
+    preview_im.alpha_composite(d_h[0], (121, 104))
+    preview_im.alpha_composite(d_h[9], (224, 104))
+    preview_im.alpha_composite(d_m[2], (127, 218))
+    preview_im.alpha_composite(d_m[8], (225, 218))
 
     f_date_p = ImageFont.truetype(FONT_BARLOW_BLACK, 36)
+    pd = ImageDraw.Draw(preview_im)
     pd.text((151, 48), "VR", fill=(0, 168, 255, 255), font=f_date_p)
     pd.text((206, 48), "12", fill=(255, 255, 255, 255), font=f_date_p)
     pd.text((252, 48), "6", fill=(255, 255, 255, 255), font=f_date_p)
@@ -290,7 +295,7 @@ def build_garmin_watchface():
     f_met_p = ImageFont.truetype(FONT_BARLOW_BLACK, 32)
     pd.text((60, 222), "80", fill=(255, 255, 255, 255), font=f_met_p)
     pd.text((348, 222), "54°", fill=(255, 255, 255, 255), font=f_met_p)
-    pd.text((204, 362), "8532", fill=(255, 255, 255, 255), font=f_met_p)
+    pd.text((201, 366), "8532", fill=(255, 255, 255, 255), font=f_met_p)
 
     b.set_preview(preview_im)
 

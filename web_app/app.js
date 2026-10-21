@@ -22,11 +22,11 @@ const WATCHFACE_CATALOG = [
     id: 'garmin_stacked',
     faceId: 14698,
     title: 'Garmin Venu 2 Stacked Digital',
-    subtitle: 'Revisi 100% Persis • Dual-Tone Stacked + Cyan Arc',
+    subtitle: 'Revisi V2 100% Persis • Stacked 2px + Zero Overlap',
     file: 'watchfaces/garmin_stacked.bin',
     preview: 'previews/garmin_stacked.png',
-    badge: 'Katalog Terbaru',
-    desc: 'Desain digital modern Garmin Venu 2 dengan waktu bertingkat (Jam Putih, Menit Cyan), arc baterai melingkar dinamis, indikator detak jantung, cuaca, dan tapak kaki.'
+    badge: 'Katalog V2 Terbaru',
+    desc: 'Desain digital modern Garmin Venu 2 dengan waktu bertingkat rapat presisi (Jam Putih, Menit Cyan), arc baterai dinamis, detak jantung, cuaca, dan tapak kaki bebas tabrakan.'
   },
   {
     id: 'casio_retro',
@@ -226,7 +226,7 @@ async function selectAndFlash(item) {
     if (item.customData) {
       binBuffer = item.customData;
     } else {
-      const resp = await fetch(item.file);
+      const resp = await fetch(item.file + '?v=15');
       if (!resp.ok) throw new Error(`Gagal mengunduh berkas ${item.file}`);
       binBuffer = await resp.arrayBuffer();
     }
