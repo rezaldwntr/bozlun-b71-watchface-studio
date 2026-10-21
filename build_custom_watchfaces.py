@@ -478,6 +478,37 @@ class WatchfaceBuilder:
             "y": y
         })
 
+    def add_ampm(self, am_img, pm_img, x0, y0, x1=None, y1=None):
+        if x1 is None:
+            x1 = x0
+        if y1 is None:
+            y1 = y0
+        e_idx = len(self.elements)
+        owhs = []
+        for i, (im, ix, iy) in enumerate([(am_img, x0, y0), (pm_img, x1, y1)]):
+            fname = f"elem_{e_idx:02d}_ampm_{i:02d}.png"
+            im.save(os.path.join(self.img_dir, fname))
+            owhs.append({
+                "rel_offset": 11 + i * 8,
+                "offset": 0,
+                "w": im.width,
+                "h": im.height,
+                "image": {
+                    "file": f"images/{fname}",
+                    "w": im.width,
+                    "h": im.height
+                }
+            })
+        raw_b = struct.pack("<BBB4H2Q", 1, 17, 1, x0, y0, x1, y1, 0, 0)
+        self.elements.append({
+            "e_type": 17,
+            "name": "ampm",
+            "size": 27,
+            "raw_hex": raw_b.hex(),
+            "owhs": owhs,
+            "coords": [(x0, y0), (x1, y1)]
+        })
+
     def add_bar_display(self, bar_imgs, x, y, b_type=6):
         e_idx = len(self.elements)
         count = len(bar_imgs)
