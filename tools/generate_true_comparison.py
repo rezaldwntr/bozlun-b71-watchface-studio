@@ -17,8 +17,14 @@ FONT_SUB = ImageFont.truetype(FONT_PATH, 18)
 FONT_ZOOM = ImageFont.truetype(FONT_PATH, 16)
 
 # Load images (all 466x466)
+import subprocess
+v3_path = os.path.join(BRAIN_DIR, "khnst02_v3_prev.png")
+if not os.path.exists(v3_path):
+    with open(v3_path, "wb") as f:
+        subprocess.run(["git", "show", "1014f36:previews/khnst02_digital.png"], stdout=f)
+
 im_ref = Image.open(os.path.join(BRAIN_DIR, "khnst02_ref_466.png")).convert("RGB")
-im_prev = Image.open("scratch_v3_wf.png").convert("RGB")
+im_prev = Image.open(v3_path).convert("RGB")
 im_new = Image.open("previews/khnst02_digital.png").convert("RGB")
 
 w, h = 466, 466

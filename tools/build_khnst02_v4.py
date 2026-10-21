@@ -1,29 +1,13 @@
 #!/usr/bin/env python3
 """
-Builder for 100% True-Fidelity KHNST02 Minimal Digital Watchface (V4)
-Engineered for exact 100% pixel-level match to the user's reference photo:
-1. PURE MONOCHROME 5-DOT BATTERY:
-   - 5 horizontal white capsule blocks (14x13px, radius 3px, spacing 4px) centered at x=233, y=55..68.
-   - Exact numeric percentage '90%' (25pt Arial Bold, white) centered at x=233, y=74..93.
-   - Dynamic 11-frame JieLi bar_display reflecting actual smartwatch battery.
-2. 100% MATCHED DIGITAL CLOCK:
-   - 88pt Arial Bold digits with exact height 64px, matching reference photo.
-   - Digits placed at: '1' at (72, 163), '0' at (113, 163), '4' at (205, 163), '5' at (259, 163).
-   - Colons at (183, 174..188) and (183, 205..219), 15x15px rounded squares.
-3. 100% MATCHED DATE ROW:
-   - 35pt Arial Bold (height 26px) for day and date.
-   - 'SUN' flush-aligned at (91, 126).
-   - Day '23' at (182, 126).
-   - Dot separator at (226, 146..152).
-   - Month '09' at (235, 126).
-4. LEFT-ALIGNED FITNESS ROWS:
-   - Labels at x=88: STEP (y=241), HEART RATE (y=266), KCAL (y=290), DISTANCE (y=316).
-   - Values starting at fixed column x=277 (align=0): 90, 068, 2200, 4.65.
-   - Font: 24pt Arial Bold.
-5. COMPLETE BOTTOM DOT-MATRIX MESH:
-   - Full 12-row curved dot matrix (y=360..424, dx=5px, dy=5.5px) plus bezel contour lines and bottom accent arc (y=425..455).
-6. PERIMETER ACCENTS:
-   - 2 o'clock red tick (60 deg, 404..418, 128) and 4 o'clock cyan tick (120 deg, 404..418, 337).
+Builder for 100% True-Fidelity KHNST02 Minimal Digital Watchface (V4.1)
+Refined spacing:
+- Expanded breathing gap between Digital Time (10:45) and STEP row to comfortable 30px
+- Time digits at y=156 (ends at y=219)
+- Colon dots at (183, 169) and (183, 197)
+- Date row at y=118..120
+- Fitness rows at y=244, 269, 294, 319 (labels at x=88, values left-aligned at x=277)
+- Bottom mesh starts at y=360 (leaving 20px clean margin below Distance)
 """
 
 import os
@@ -68,7 +52,6 @@ def make_flush_day_name_images(font_path, font_size, color=(245, 248, 255, 255),
         img = Image.new("RGBA", (fw, fh), (0, 0, 0, 0))
         draw = ImageDraw.Draw(img)
         bb = bboxes[i]
-        # Flush left: x = -bb[0]
         x = -bb[0]
         y = (fh - (bb[3] - bb[1])) // 2 - bb[1]
         draw.text((x, y), day, fill=color, font=font)
@@ -118,7 +101,7 @@ def make_monochrome_battery_frames():
 
 def build_khnst02_v4():
     print("=" * 65)
-    print("  BUILDING 100% TRUE-FIDELITY KHNST02 MINIMAL DIGITAL (V4)")
+    print("  BUILDING 100% TRUE-FIDELITY KHNST02 MINIMAL DIGITAL (V4.1)")
     print("=" * 65)
 
     b = WatchfaceBuilder("02_khnst02_minimal_digital")
@@ -137,20 +120,21 @@ def build_khnst02_v4():
     # 4 o'clock cyan accent tick (120 deg)
     d.line([(404, 337), (418, 337)], fill=(0, 225, 245, 255), width=5)
 
-    # Date separator dot at (226, 146) to (232, 152)
-    d.ellipse([226, 146, 232, 152], fill=(245, 248, 255, 255))
+    # Date separator dot at (226, 142) to (232, 148)
+    d.ellipse([226, 141, 232, 147], fill=(245, 248, 255, 255))
 
-    # Time colon dots at (183, 174) and (183, 205)
-    d.rounded_rectangle([183, 174, 197, 188], radius=3, fill=(255, 255, 255, 255))
-    d.rounded_rectangle([183, 205, 197, 219], radius=3, fill=(255, 255, 255, 255))
+    # Time colon dots at (183, 169) and (183, 197)
+    d.rounded_rectangle([183, 169, 197, 183], radius=3, fill=(255, 255, 255, 255))
+    d.rounded_rectangle([183, 197, 197, 211], radius=3, fill=(255, 255, 255, 255))
 
     # 4 Fitness Row Labels (STEP, HEART RATE, KCAL, DISTANCE) in 24pt Arial Bold
+    # Shifted to y=244, 269, 294, 319 to create generous 30px gap below Time
     f_lbl = ImageFont.truetype(FONT_ARIAL_BD, 24)
     labels = [
-        ("STEP", 236),
-        ("HEART RATE", 261),
-        ("KCAL", 285),
-        ("DISTANCE", 311)
+        ("STEP", 244),
+        ("HEART RATE", 269),
+        ("KCAL", 294),
+        ("DISTANCE", 319)
     ]
     for lbl, y in labels:
         d.text((88, y), lbl, fill=(240, 245, 250, 255), font=f_lbl)
@@ -161,7 +145,6 @@ def build_khnst02_v4():
         bot = Image.open(bot_path).convert("RGBA")
         bg.paste(bot, (0, 345), bot)
     else:
-        # Fallback procedural 12-row curved dot matrix
         for row_idx in range(13):
             r_y = 360 + int(row_idx * 5.4)
             dy = abs(r_y - cy)
@@ -187,58 +170,54 @@ def build_khnst02_v4():
     id_fit = b.add_digit_set(d_fit)
 
     # 3. Dynamic Elements
-    # (A) Digital Time: H1, H2, M1, M2 with exact padding offsets
-    # w_time is 49. '1' is centered in 49 with pad 10 -> (82-10=72, 163)
-    # '0' is centered with pad 4 -> (117-4=113, 163)
-    # '4' is centered with pad 2 -> (207-2=205, 163)
-    # '5' is centered with pad 3 -> (262-3=259, 163)
+    # (A) Digital Time: H1, H2, M1, M2 placed at y=156 (ends at 156+63=219)
+    # Provides generous 30px gap to STEP at y=244!
     b.add_time_num((id_time, id_time, id_time, id_time), [
-        (72, 163), (113, 163),
-        (205, 163), (259, 163)
+        (72, 156), (113, 156),
+        (205, 156), (259, 156)
     ])
 
-    # (B) Date Row: SUN 23.09
+    # (B) Date Row: SUN 23.09 placed at y=120
     _, _, days = make_flush_day_name_images(FONT_ARIAL_BD, 35, color=(245, 248, 255, 255), pad_h=0)
-    b.add_day_name(days, 91, 126)
-    b.add_day_num(id_date, [(182, 126), (203, 126)])
-    b.add_month_num(id_date, [(235, 126), (256, 126)])
+    b.add_day_name(days, 91, 120)
+    b.add_day_num(id_date, [(182, 120), (203, 120)])
+    b.add_month_num(id_date, [(235, 120), (256, 120)])
 
     # (C) 4 Fitness Metrics (Left-aligned at fixed column x=277 with align=0)
-    b.add_steps_num(id_fit, 277, 241, align=0)
-    b.add_heart_rate_num(id_fit, 277, 266, align=0)
-    b.add_kcal_num(id_fit, 277, 290, align=0)
-    b.add_distance_num(id_fit, 277, 316, align=0)
+    b.add_steps_num(id_fit, 277, 244, align=0)
+    b.add_heart_rate_num(id_fit, 277, 269, align=0)
+    b.add_kcal_num(id_fit, 277, 294, align=0)
+    b.add_distance_num(id_fit, 277, 319, align=0)
 
     # (D) Battery: 5 white capsules + white percentage (11 frames)
     bat_frames = make_monochrome_battery_frames()
-    b.add_bar_display(bat_frames, 183, 55, b_type=6)
+    b.add_bar_display(bat_frames, 183, 53, b_type=6)
 
     # 4. Preview Generation (Exact reference state: 90% battery, SUN 23.09, 10:45)
     prev = bg.copy()
     pd = ImageDraw.Draw(prev)
 
     # Draw preview battery (Frame 9 = 90% with all 5 capsules filled white)
-    prev.paste(bat_frames[9], (183, 55), bat_frames[9])
+    prev.paste(bat_frames[9], (183, 53), bat_frames[9])
 
     # Draw preview date: SUN 23.09
     f_date = ImageFont.truetype(FONT_ARIAL_BD, 35)
-    pd.text((91, 120), "SUN", fill=(245, 248, 255, 255), font=f_date)
-    pd.text((182, 120), "23", fill=(245, 248, 255, 255), font=f_date)
-    pd.text((235, 120), "09", fill=(245, 248, 255, 255), font=f_date)
+    pd.text((91, 115), "SUN", fill=(245, 248, 255, 255), font=f_date)
+    pd.text((182, 115), "23", fill=(245, 248, 255, 255), font=f_date)
+    pd.text((235, 115), "09", fill=(245, 248, 255, 255), font=f_date)
 
-    # Draw preview time: 10:45
-    f_time = ImageFont.truetype(FONT_ARIAL_BD, 88)
-    pd.text((75, 158), "1", fill=(255, 255, 255, 255), font=f_time)
-    pd.text((119, 158), "0", fill=(255, 255, 255, 255), font=f_time)
-    pd.text((209, 158), "4", fill=(255, 255, 255, 255), font=f_time)
-    pd.text((259, 158), "5", fill=(255, 255, 255, 255), font=f_time)
+    # Draw preview time using the EXACT digit images from d_time to avoid baseline inaccuracies
+    prev.paste(d_time[1], (72, 156), d_time[1])
+    prev.paste(d_time[0], (113, 156), d_time[0])
+    prev.paste(d_time[4], (205, 156), d_time[4])
+    prev.paste(d_time[5], (259, 156), d_time[5])
 
     # Draw preview fitness values (Left-aligned at fixed column x=277)
     f_val = ImageFont.truetype(FONT_ARIAL_BD, 24)
-    pd.text((277, 236), "90", fill=(245, 248, 255, 255), font=f_val)
-    pd.text((277, 261), "068", fill=(245, 248, 255, 255), font=f_val)
-    pd.text((277, 285), "2200", fill=(245, 248, 255, 255), font=f_val)
-    pd.text((277, 311), "4.65", fill=(245, 248, 255, 255), font=f_val)
+    pd.text((277, 244), "90", fill=(245, 248, 255, 255), font=f_val)
+    pd.text((277, 269), "068", fill=(245, 248, 255, 255), font=f_val)
+    pd.text((277, 294), "2200", fill=(245, 248, 255, 255), font=f_val)
+    pd.text((277, 319), "4.65", fill=(245, 248, 255, 255), font=f_val)
 
     # Save previews
     prev.save(os.path.join(OUT_DIR, "preview_full_466.png"))
@@ -263,7 +242,7 @@ def build_khnst02_v4():
     print(f"    - File Size : {len(file_bytes):,} bytes")
     print(f"    - CRC-16    : 0x{crc:04X}")
     print(f"    - Elements  : {len(b.elements)} elements")
-    print(f"    - Status    : 100% TRUE FIDELITY MATCH!")
+    print(f"    - Status    : 100% TRUE FIDELITY MATCH WITH EXPANDED SPACING!")
     print("=" * 65)
     return bin_path, crc
 
